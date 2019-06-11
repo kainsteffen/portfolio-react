@@ -1,0 +1,15 @@
+.bullet-list {
+    margin-top: 20px;
+}
+
+.bullet-list h4 {
+    margin-bottom: 10px;
+}
+
+.bullet-list ul {
+    margin-left: 40px;
+}
+
+.bullet-list li {
+    margin: 5px 0;
+}

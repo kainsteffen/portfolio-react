@@ -1,0 +1,82 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.navbar h1 {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.navbar .logo {
+  height: 50px;
+}
+
+.navbar-right a {
+  position: relative;
+  float: left;
+  text-align: center;
+  margin: 15px 0 15px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-right a:visited {
+  color: var(--main-color);
+}
+
+.navbar-right #active:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 50%;
+  height: 1px;
+  background-color: var(--main-color);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+
+.navbar-right a:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  background-color: var(--main-color);
+  width: 0;
+  height: 1px;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+
+.navbar-right a:hover:after {
+  width: 50%;
+  height: 1px;
+}
+
+.navbar-right {
+  float: right;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    margin: 0 15px;
+  }
+  .navbar-right {
+    display: none;
+  }
+}
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 1000px) {
+  .navbar {
+    margin: 0 var(--page-margin-desktop);
+  }
+  .navbar-right {
+    display: visible;
+  }
+}

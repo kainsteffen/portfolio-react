@@ -1,0 +1,87 @@
+.motto-group {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+.motto-spacer {
+    flex: 0.6;
+}
+
+.motto {
+    flex: 1;
+}
+
+.motto-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.motto-header h4 {
+    text-align: start;
+    padding-left: 10px;
+    border-left: 2px solid var(--main-color);
+}
+
+.motto-header img {
+    height: 40px;
+}
+
+.motto-description {
+    margin-top: 25px;
+}
+
+.skills-category h4 {
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.skills-list li {
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    white-space: nowrap;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .16), 0 0 2px rgba(0, 0, 0, .08);
+    /*
+        smooth box shadow
+        0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+    */
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 500px) {
+    .motto-group {
+        flex-direction: column;
+    }
+    .motto {
+        margin: 20px 0;
+        padding: 0 10%;
+    }
+}
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+    .motto-group {
+        flex-direction: column;
+    }
+    .motto {
+        margin: 25px 0;
+        padding: 0 15%;
+    }
+}
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 1000px) {
+    .skills-section-content {
+        padding: 0 5%;
+    }
+}

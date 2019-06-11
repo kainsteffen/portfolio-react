@@ -1,0 +1,52 @@
+#header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85vh;
+}
+
+.header__quote {
+    display: flex;
+    justify-content: center;
+}
+
+.header__quote img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.header__quote h1 {
+    display: inline-block;
+}
+
+#header-container .arrow-down-button {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+    transform: translatey(0px);
+    animation: float 4s ease-in-out infinite;
+}
+
+#header-container .arrow-down-button img {
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
