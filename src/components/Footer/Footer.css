@@ -9,7 +9,6 @@ footer {
 
 footer a {
     color: var(--background-color);
-    text-decoration-line: none;
 }
 
 footer a:hover {
