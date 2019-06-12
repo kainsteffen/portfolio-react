@@ -6,7 +6,6 @@ class SkillsSection extends Component {
     render() {
         return (
             <section className='skills-section'>
-                <SectionHeader text='Things I&apos;m good at' />
                 <div className='skills-section-content'>
                     <div className='motto-group'>
                         <MottoCard
@@ -15,14 +14,14 @@ class SkillsSection extends Component {
                             description='I have a keen eye for aesthetics and am always in pursuit for the most visually pleasing product.'
                             image={require('./images/brush.svg')}
                         />
-                        <div className='motto-spacer' />
+                        <img src={require('./images/arrow-right.svg')} className='motto-connector' />
                         <MottoCard
                             index='02'
                             title='Develop'
                             description='I strive for modular and understandable systems that consistently provide opportunities for extension and improvement.'
                             image={require('./images/wrench.svg')}
                         />
-                        <div className='motto-spacer' />
+                        <img src={require('./images/arrow-right.svg')} className='motto-connector' />
                         <MottoCard
                             index='03'
                             title='Deliver'
@@ -30,6 +29,10 @@ class SkillsSection extends Component {
                             image={require('./images/clipboard.svg')}
                         />
                     </div>
+                </div>
+
+                <SectionHeader text='Things I&apos;m good at' />
+                <div className='skills-section-content'>
                     <SkillsList
                         title='Technologies'
                         skills=
