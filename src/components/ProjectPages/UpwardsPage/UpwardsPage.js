@@ -35,10 +35,10 @@ class UpwardsPage extends Component {
                                     />
                                     <p>
                                         Upwards! is a free, casual mobile game that challenges your dexterity and
-                                        reflexes. The game has so far ammassed 40.000+ downloads on both iOS and Android.
+                                        reflexes. The game has so far amassed 40.000+ downloads on both iOS and Android.
                                     <br /><br />
                                         Players increase their score by making their way up with walljumping
-                                        and avoiding obstacles. They are driven to complete on the online leaderboards
+                                        while avoiding obstacles. They are driven to complete on the online leaderboards
                                         to see who can climb the highest!
                                     </p>
                                     <BulletList
@@ -47,7 +47,7 @@ class UpwardsPage extends Component {
                                             'Google Play Games Integration',
                                             'Google AdMob advertising',
                                             'Leaderboards, Achievements, In-App purchases',
-                                            'customizable purchase categories',
+                                            'customizable player character and color themes',
                                             'adaptive game difficulty and dynamic level generation',
                                             'simple, intuitive one-handed controls'
                                         ]}
