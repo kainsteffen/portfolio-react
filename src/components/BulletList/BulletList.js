@@ -8,7 +8,7 @@ function BulletList(props) {
             <ul>
                 {
                     props.items.map(
-                        (item) => (<li>{item}</li>)
+                        (item, index) => (<li key={index}>{item}</li>)
                     )
                 }
             </ul>

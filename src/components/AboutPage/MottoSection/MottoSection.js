@@ -14,14 +14,14 @@ class MottoSection extends Component {
                         description='I have a keen eye for aesthetics and am always in pursuit for the most visually pleasing product.'
                         image={require('./images/brush.svg')}
                     />
-                    <img src={require('./images/arrow-right.svg')} className='motto-connector' />
+                    <img src={require('./images/arrow-right.svg')} className='motto-connector' alt='Arrow right' />
                     <MottoCard
                         index='02'
                         title='Develop'
                         description='I strive for understandable systems that are consistently extensible and improveable.'
                         image={require('./images/wrench.svg')}
                     />
-                    <img src={require('./images/arrow-right.svg')} className='motto-connector' />
+                    <img src={require('./images/arrow-right.svg')} className='motto-connector' alt='Arrow right' />
                     <MottoCard
                         index='03'
                         title='Deliver'

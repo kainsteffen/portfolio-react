@@ -18,7 +18,7 @@ class Header extends Component {
     return (
       <div id='header-container' >
         <div className='header-quote'>
-          <img src={require('./images/quotation-mark.svg')} />
+          <img src={require('./images/quotation-mark.svg')} alt='Quotation mark' />
           <div className='header-titles'>
             <h1>Hi, I'm Khanh</h1>
             <h2> I'm good at pushing pixels around the screen.</h2>
@@ -27,7 +27,7 @@ class Header extends Component {
         {
           window.pageYOffset < this.state.componentHeight &&
           <button className='arrow-down-button' onClick={this.handleArrowDownButtonPress.bind(this)}>
-            <img src={require('./images/arrow-down.svg')} />
+            <img src={require('./images/arrow-down.svg')} alt='Arrow down' />
           </button>
         }
       </div >

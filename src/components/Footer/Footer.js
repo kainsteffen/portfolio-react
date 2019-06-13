@@ -24,19 +24,19 @@ class Footer extends Component {
                     <div className='contact-section-spacer' />
                     <div className='social-media-links'>
                         <a href='https://github.com/kainsteffen'>
-                            <img src={require('./images/github-logo.svg')} />
+                            <img src={require('./images/github-logo.svg')} alt='Github logo' />
                         </a>
                         <a href='https://www.linkedin.com/in/khanh-steffen/'>
-                            <img src={require('./images/linkedin-logo.svg')} />
+                            <img src={require('./images/linkedin-logo.svg')} alt='Linkedin logo' />
                         </a>
                         <a href='https://www.xing.com/profile/TranDuyKhanh_Steffen'>
-                            <img src={require('./images/xing-logo.svg')} />
+                            <img src={require('./images/xing-logo.svg')} alt='Xing logo' />
                         </a>
                     </div>
                 </address>
                 <span className='copyright-text'>{'Designed and Coded by Khanh Steffen © ' + new Date().getFullYear() + ' '}</span>
                 <button onClick={this.handleClick} className='scroll-top-button'>
-                    <img src={require('./images/arrow_up.svg')} />
+                    <img src={require('./images/arrow_up.svg')} alt='Arrow up' />
                 </button>
             </footer >
         );

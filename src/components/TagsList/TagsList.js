@@ -8,7 +8,7 @@ function TagsList(props) {
             <ul>
                 {
                     props.skills.map(
-                        (skill) => (<li>{skill}</li>)
+                        (skill, index) => (<li key={index}>{skill}</li>)
                     )
                 }
             </ul>

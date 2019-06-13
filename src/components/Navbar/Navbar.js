@@ -28,8 +28,8 @@ class Navbar extends Component {
                         </Link>
                     </h1>
                     <ul className="navbar-right">
-                        <Link to='/' id={this.props.location.pathname == '/' && 'active'}>WORK</Link>
-                        <Link to='/about' id={this.props.location.pathname == '/about' && 'active'}>ABOUT</Link>
+                        <Link to='/' id={this.props.location.pathname === '/' ? 'active' : undefined}>WORK</Link>
+                        <Link to='/about' id={this.props.location.pathname === '/about' ? 'active' : undefined}>ABOUT</Link>
                     </ul>
                     <HamburgerButton isCollapsed={this.state.isToggled} onClick={this.handleClick.bind(this)} />
                     <MobileNavbar isToggled={this.state.isToggled} onClick={this.handleClick.bind(this)} />
@@ -56,7 +56,7 @@ class Navbar extends Component {
                     //isScrolled: true,
                 }
             );
-        } else if (scrollTop == 0) {
+        } else if (scrollTop === 0) {
             this.setState(
                 {
                     //isScrolled: false,
