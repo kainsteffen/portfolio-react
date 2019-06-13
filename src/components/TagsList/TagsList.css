@@ -1,14 +1,14 @@
-.tags-category h4 {
-    margin-bottom: 20px;
+.tags-list h4 {
+    margin-bottom: 10px;
 }
 
-.tags-list {
+.tags-list ul {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
-.tags-list li {
+.tags-list ul li {
     margin: 10px;
     padding: 10px;
     list-style-type: none;

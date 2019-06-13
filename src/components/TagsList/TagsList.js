@@ -3,9 +3,9 @@ import './TagsList.css';
 
 function TagsList(props) {
     return (
-        <div className='tags-category'>
-            <h4 className='tags-header'>{props.title}</h4>
-            <ul className='tags tags-list'>
+        <div className='tags-list'>
+            <h4>{props.title}</h4>
+            <ul>
                 {
                     props.skills.map(
                         (skill) => (<li>{skill}</li>)
