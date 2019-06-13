@@ -1,5 +1,5 @@
 .tags-category h4 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .tags-list {
@@ -9,7 +9,7 @@
 }
 
 .tags-list li {
-    margin: 0 10px;
+    margin: 10px;
     padding: 10px;
     list-style-type: none;
     white-space: nowrap;

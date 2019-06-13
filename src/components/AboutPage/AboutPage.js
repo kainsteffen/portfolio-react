@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './AboutPage.css';
 import AboutSection from './AboutSection/AboutSection.js';
+import MottoSection from './MottoSection/MottoSection.js';
 import SkillsSection from './SkillsSection/SkillsSection.js';
 import Footer from '../Footer/Footer.js';
 
@@ -13,6 +14,7 @@ class App extends Component {
                 <body>
                     <main>
                         <AboutSection />
+                        <MottoSection />
                         <SkillsSection />
                     </main>
                     <Footer />
