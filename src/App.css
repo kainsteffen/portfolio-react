@@ -1,0 +1,35 @@
+.fade.enter {
+    opacity: 0.01;
+}
+
+.fade.enter.enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.fade.exit {
+    opacity: 1;
+}
+
+.fade.exit.exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.transition-group {
+    position: relative;
+}
+
+.fade {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.route-section {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}

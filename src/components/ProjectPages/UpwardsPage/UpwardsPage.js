@@ -14,7 +14,6 @@ class UpwardsPage extends Component {
                 <header className="App-header">
                 </header>
                 <body>
-                    <Navbar />
                     <main>
                         <SectionHeader text={'Upwards!'} />
                         <article className='project-page'>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './HomePage.css';
 import ProjectCard from '../../components/ProjectCard/ProjectCard.js';
-import Navbar from '../../components/Navbar/Navbar.js';
 import SectionHeader from '../../components/SectionHeader/SectionHeader.js';
 import Header from './Header/Header.js'
 import Footer from '../../components/Footer/Footer.js';
@@ -19,7 +18,6 @@ class HomePage extends Component {
         <header className="App-header">
         </header>
         <body>
-          <Navbar />
           <main>
             <Header />
             <SectionHeader text='My Projects' />

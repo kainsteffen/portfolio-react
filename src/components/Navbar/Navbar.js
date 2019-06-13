@@ -32,7 +32,7 @@ class Navbar extends Component {
                         <Link to='/about' id={this.props.location.pathname == '/about' && 'active'}>ABOUT</Link>
                     </ul>
                     <HamburgerButton isCollapsed={this.state.isToggled} onClick={this.handleClick.bind(this)} />
-                    <MobileNavbar isToggled={this.state.isToggled} />
+                    <MobileNavbar isToggled={this.state.isToggled} onClick={this.handleClick.bind(this)} />
                 </nav >
             )
         } else {

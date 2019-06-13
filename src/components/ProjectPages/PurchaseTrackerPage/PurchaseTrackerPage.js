@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../ProjectPage.css';
-import Navbar from '../../Navbar/Navbar.js';
 import SectionHeader from '../../SectionHeader/SectionHeader.js';
 import Footer from '../../Footer/Footer.js';
 import TagsList from '../../TagsList/TagsList.js';
@@ -16,7 +15,6 @@ class PurchaseTrackerPage extends Component {
                 <header className="App-header">
                 </header>
                 <body>
-                    <Navbar />
                     <main>
                         <SectionHeader text={'Purchase Tracker'} />
                         <article className='project-page'>
