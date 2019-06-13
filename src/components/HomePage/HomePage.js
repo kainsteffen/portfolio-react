@@ -6,12 +6,6 @@ import Header from './Header/Header.js'
 import Footer from '../../components/Footer/Footer.js';
 
 class HomePage extends Component {
-  componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
-      window.scrollTo(0, 0)
-    }
-  }
-
   render() {
     return (
       <div className="App">
