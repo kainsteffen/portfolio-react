@@ -57,6 +57,8 @@ class SkillsSection extends Component {
                             'Figma',
                             'Android Studio',
                             'XCode',
+                            'GitHub',
+                            'GitLab',
                             'Jira / Trello',
                             'Slack / Microsoft Teams',
                             'Word',
