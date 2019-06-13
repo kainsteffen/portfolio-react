@@ -16,58 +16,55 @@ class AstendoEventPage extends Component {
                     <main>
                         <SectionHeader text={'astendo Event'} />
                         <article className='project-page'>
-                            <div className='project-page-content'>
-                                <img src={require('./images/astendo-event-thumbnail.png')} className='project-page-header-image' />
-                                <div>
-                                    <h4 className='project-page-subtitle'>
-                                        2019 - Company Work
+                            <img src={require('./images/astendo-event-thumbnail.png')} className='project-page-header-image' />
+                            <div>
+                                <h4 className='project-page-subtitle'>
+                                    2019 - Company Work
                                     </h4>
-                                    <h4 className='project-page-subtitle'>
-                                        My Role: Frontend Developer
+                                <h4 className='project-page-subtitle'>
+                                    My Role: Frontend Developer
                                     </h4>
-                                    <TagsList
-                                        title='Technologies:'
-                                        skills=
-                                        {[
-                                            'Flutter',
-                                            'Dart',
-                                            'Redux',
-                                        ]}
-                                    />
-                                    <p>
-                                        astendo Event is a mobile companion app to astendo GmbH's Event Manager software
-                                        package which is used to organize real-life events. The app facilitates
-                                        communication and information flow between event goers and event hosts.
+                                <TagsList
+                                    title='Technologies:'
+                                    skills=
+                                    {[
+                                        'Flutter',
+                                        'Dart',
+                                        'Redux',
+                                    ]}
+                                />
+                                <p>
+                                    astendo Event is a mobile companion app to astendo GmbH's Event Manager software
+                                    package which is used to organize real-life events. The app facilitates
+                                    communication and information flow between event goers and event hosts.
                                     <br /><br />
-                                        I was personally responsible for the creation of screens and UI components, peer-reviewing
-                                        code and internationalisation of the app.
+                                    I was personally responsible for the creation of screens and UI components, peer-reviewing
+                                    code and internationalisation of the app.
                                     </p>
-                                    <BulletList
-                                        title='Features:'
-                                        items={[
-                                            'online event information access and check-in',
-                                            'LiveZilla support chat',
-                                            'i18l language internationalisation',
-                                            'redux state management',
-                                            'server-side customizable UI'
-                                        ]}
+                                <BulletList
+                                    title='Features:'
+                                    items={[
+                                        'online event information access and check-in',
+                                        'LiveZilla support chat',
+                                        'i18l language internationalisation',
+                                        'redux state management',
+                                        'server-side customizable UI'
+                                    ]}
+                                />
+                                <div className='project-page-links'>
+                                    <CustomButton
+                                        label='App Store'
+                                        leadingIcon={require('../images/apple-logo.svg')}
+                                        onPress={this.handleAppStoreButtonPress.bind(this)}
                                     />
-                                    <div className='project-page-links'>
-                                        <CustomButton
-                                            label='App Store'
-                                            leadingIcon={require('../images/apple-logo.svg')}
-                                            onPress={this.handleAppStoreButtonPress.bind(this)}
-                                        />
 
-                                        <CustomButton
-                                            label='Google Play'
-                                            leadingIcon={require('../images/android-logo.svg')}
-                                            onPress={this.handlePlayStoreButtonPress.bind(this)}
-                                        />
-                                    </div>
+                                    <CustomButton
+                                        label='Google Play'
+                                        leadingIcon={require('../images/android-logo.svg')}
+                                        onPress={this.handlePlayStoreButtonPress.bind(this)}
+                                    />
                                 </div>
                             </div>
-
                         </article>
                     </main>
                     <Footer />
