@@ -21,7 +21,7 @@ class Footer extends Component {
                         <br></br>
                         <a href='mailto:khanhsteffen@gmail.com'>khanhsteffen@gmail.com</a>
                     </div>
-                    <div className='contact-section__spacer' />
+                    <div className='contact-section-spacer' />
                     <div className='social-media-links'>
                         <a href='https://github.com/kainsteffen'>
                             <img src={require('./images/github-logo.svg')} />

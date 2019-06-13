@@ -17,7 +17,7 @@ class Header extends Component {
   render() {
     return (
       <div id='header-container' >
-        <div className='header__quote'>
+        <div className='header-quote'>
           <img src={require('./images/quotation-mark.svg')} />
           <div className='header-titles'>
             <h1>Hi, I'm Khanh</h1>

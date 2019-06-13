@@ -6,19 +6,19 @@
     height: 85vh;
 }
 
-.header__quote {
+.header-quote {
     display: flex;
     justify-content: center;
 }
 
-.header__quote img {
+.header-quote img {
     display: inline-block;
     width: 40px;
     height: 40px;
     margin-right: 20px;
 }
 
-.header__quote h1 {
+.header-quote h1 {
     display: inline-block;
 }
 

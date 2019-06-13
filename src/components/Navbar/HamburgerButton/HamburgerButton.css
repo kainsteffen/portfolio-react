@@ -6,7 +6,7 @@
     z-index: 2;
 }
 
-.hamburger-button__line {
+.hamburger-button-line {
     position: absolute;
     width: 40px;
     height: 2px;
@@ -14,7 +14,7 @@
     transition: .3s ease-in-out;
 }
 
-.hamburger-button.collapsed .hamburger-button__line {
+.hamburger-button.collapsed .hamburger-button-line {
     background-color: var(--background-color);
 }
 
