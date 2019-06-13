@@ -50,7 +50,6 @@ class Navbar extends Component {
 
     handleScroll(event) {
         let scrollTop = window.pageYOffset;
-        console.log(scrollTop);
         if (scrollTop > 0) {
             this.setState(
                 {
