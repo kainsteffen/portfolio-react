@@ -21,7 +21,7 @@ class Navbar extends Component {
     render() {
         if (!this.state.isScrolled) {
             return (
-                <nav className="navbar">
+                <nav className="navbar fadeIn">
                     <h1>
                         <Link to='/'>
                             <img src={require('./images/logo.svg')} className='logo' alt='Khanh Steffen' />

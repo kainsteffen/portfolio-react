@@ -6,9 +6,24 @@
     height: 85vh;
 }
 
+.header-animation-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    /* transform: rotate(45deg); */
+}
+
 .header-quote {
     display: flex;
     justify-content: center;
+}
+
+.header-quote h1 {
+    font-size: 35px;
+}
+
+.header-quote h2 {
+    font-size: 20px;
 }
 
 .header-quote img {

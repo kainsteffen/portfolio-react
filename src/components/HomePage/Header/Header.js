@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Header.css';
 import './pong.js';
+import '../../BallGridAnimation/BallGridAnimation';
+import BallGridAnimation from '../../BallGridAnimation/BallGridAnimation';
 
 class Header extends Component {
   constructor(props) {
@@ -16,8 +18,11 @@ class Header extends Component {
 
   render() {
     return (
-      <div id='header-container' >
-        <div className='header-quote'>
+      <div id='header-container'>
+        <div className='header-animation-container'>
+          <BallGridAnimation size={100} rows={3} columns={3} animationSpeed={500} animationDelay={1000} />
+        </div>
+        <div className='header-quote fadeIn-slideInFromBelow'>
           <img src={require('./images/quotation-mark.svg')} alt='Quotation mark' />
           <div className='header-titles'>
             <h1>Hi, I'm Khanh</h1>
@@ -26,8 +31,8 @@ class Header extends Component {
         </div>
         {
           window.pageYOffset < this.state.componentHeight &&
-          <button className='arrow-down-button' onClick={this.handleArrowDownButtonPress.bind(this)}>
-            <img src={require('./images/arrow-down.svg')} alt='Arrow down' />
+          <button className='arrow-down-button fadeIn' onClick={this.handleArrowDownButtonPress.bind(this)}>
+            <img src={require('./images/arrow-down.svg')} alt='Arrow down' className='fadeIn' />
           </button>
         }
       </div >
