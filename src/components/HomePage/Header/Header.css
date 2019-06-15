@@ -18,19 +18,19 @@
     justify-content: center;
 }
 
+.header-quote img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
 .header-quote h1 {
     font-size: 35px;
 }
 
 .header-quote h2 {
     font-size: 20px;
-}
-
-.header-quote img {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
 }
 
 .header-quote h1 {
