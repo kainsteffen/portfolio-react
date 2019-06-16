@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/purchase-tracker-thumbnail.a4a7a0f5.png"
   },
   {
-    "revision": "3e40d05a5d236eb8cfe5",
+    "revision": "11e7a060d58f7c2b7192",
     "url": "/portfolio-react/static/css/main.ce918a3f.chunk.css"
   },
   {
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/arrow_up.24a93bb6.svg"
   },
   {
-    "revision": "3e40d05a5d236eb8cfe5",
-    "url": "/portfolio-react/static/js/main.925735fa.chunk.js"
+    "revision": "11e7a060d58f7c2b7192",
+    "url": "/portfolio-react/static/js/main.feca6a28.chunk.js"
   },
   {
     "revision": "9046aea50f1dc798f93beb5acd82eee4",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/clipboard.7e277b29.svg"
   },
   {
-    "revision": "884a72a972c26f064ae67919fda47a32",
+    "revision": "eedaafb989ae79a31bf54e7201f43543",
     "url": "/portfolio-react/index.html"
   }
 ];
