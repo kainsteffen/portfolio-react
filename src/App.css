@@ -1,10 +1,11 @@
 .fade.enter {
-    opacity: 0.01;
+    opacity: 0;
 }
 
 .fade.enter.enter-active {
     opacity: 1;
     transition: opacity 300ms ease-in;
+    transition-delay: 200ms;
 }
 
 .fade.exit {
@@ -12,8 +13,8 @@
 }
 
 .fade.exit.exit-active {
-    opacity: 0.01;
-    transition: opacity 300ms ease-in;
+    opacity: 0;
+    transition: opacity 200ms ease-in;
 }
 
 .transition-group {
