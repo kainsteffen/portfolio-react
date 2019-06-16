@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, withRouter } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Navbar from './components/Navbar/Navbar';
@@ -16,7 +16,7 @@ import './App.css';
 class App extends Component {
     render() {
         return (
-            <React.Fragment>
+            <Router>
                 <Navbar />
                 <ScrollToTop>
                     <TransitionGroup className="transition-group">
@@ -38,7 +38,7 @@ class App extends Component {
                         </CSSTransition>
                     </TransitionGroup>
                 </ScrollToTop>
-            </React.Fragment>
+            </Router>
         );
     }
 }
