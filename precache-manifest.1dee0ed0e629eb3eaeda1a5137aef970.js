@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/purchase-tracker-thumbnail.a4a7a0f5.png"
   },
   {
-    "revision": "ce4de4d5a07180d0c33c",
+    "revision": "3e40d05a5d236eb8cfe5",
     "url": "/portfolio-react/static/css/main.ce918a3f.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/js/runtime~main.72b3206a.js"
   },
   {
-    "revision": "ac72d232176908c0f62a",
-    "url": "/portfolio-react/static/js/2.7cb02705.chunk.js"
+    "revision": "c49ee48943e316f31b42",
+    "url": "/portfolio-react/static/js/2.457c30fb.chunk.js"
   },
   {
     "revision": "9838ea6b336247d55c55cae8b992b527",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/arrow_up.24a93bb6.svg"
   },
   {
-    "revision": "ce4de4d5a07180d0c33c",
-    "url": "/portfolio-react/static/js/main.414efae5.chunk.js"
+    "revision": "3e40d05a5d236eb8cfe5",
+    "url": "/portfolio-react/static/js/main.925735fa.chunk.js"
   },
   {
     "revision": "9046aea50f1dc798f93beb5acd82eee4",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/clipboard.7e277b29.svg"
   },
   {
-    "revision": "597b78854cdfc186459b27ad3009a584",
+    "revision": "884a72a972c26f064ae67919fda47a32",
     "url": "/portfolio-react/index.html"
   }
 ];
