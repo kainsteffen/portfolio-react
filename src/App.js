@@ -21,7 +21,7 @@ class App extends Component {
                 <ScrollToTop>
                     <TransitionGroup className="transition-group">
                         <CSSTransition
-                            key={this.props.location.key}
+                            key={this.props.location.pathname}
                             timeout={500}
                             className={'fade'}
                         >
