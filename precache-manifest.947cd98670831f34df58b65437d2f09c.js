@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/purchase-tracker-thumbnail.a4a7a0f5.png"
   },
   {
-    "revision": "11e7a060d58f7c2b7192",
-    "url": "/portfolio-react/static/css/main.ce918a3f.chunk.css"
+    "revision": "1e8b41801b6ee509de4a",
+    "url": "/portfolio-react/static/css/main.75ba998c.chunk.css"
   },
   {
     "revision": "11528ddda4154ce1e32b",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/arrow_up.24a93bb6.svg"
   },
   {
-    "revision": "11e7a060d58f7c2b7192",
-    "url": "/portfolio-react/static/js/main.feca6a28.chunk.js"
+    "revision": "1e8b41801b6ee509de4a",
+    "url": "/portfolio-react/static/js/main.99fc90ba.chunk.js"
   },
   {
     "revision": "9046aea50f1dc798f93beb5acd82eee4",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/clipboard.7e277b29.svg"
   },
   {
-    "revision": "eedaafb989ae79a31bf54e7201f43543",
+    "revision": "66490804c04d22a03a1e39a47b4171e8",
     "url": "/portfolio-react/index.html"
   }
 ];
