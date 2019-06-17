@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazy-load';
 import './AboutSection.css';
 import SectionHeader from '../../SectionHeader/SectionHeader.js';
 import CustomButton from '../../CustomButton/CustomButton.js';
@@ -9,7 +10,9 @@ class AboutSection extends Component {
             <section className='about-section'>
                 <SectionHeader text='About Me' />
                 <div className='about-section-container'>
-                    <img src={require('./images/profile-picture.jpg')} alt='Profile' />
+                    <LazyLoad>
+                        <img src={require('./images/profile-picture.jpg')} alt='Profile' />
+                    </LazyLoad>
                     <div className='about-section-content'>
                         <h4>Khanh Steffen</h4>
                         <p>
