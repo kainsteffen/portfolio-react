@@ -48,6 +48,7 @@
     height: 80px;
     transform: translatey(0px);
     animation: float 4s ease-in-out infinite;
+    cursor: pointer;
 }
 
 #header-container .arrow-down-button img {

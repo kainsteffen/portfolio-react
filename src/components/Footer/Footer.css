@@ -57,6 +57,7 @@ footer a:hover {
     border-radius: 100%;
     box-shadow: 0 1px 3px 0 rgba(60, 64, 67, .3), 0 4px 8px 3px rgba(60, 64, 67, .15);
     outline: 0;
+    cursor: pointer;
 }
 
 .scroll-top-button img {
