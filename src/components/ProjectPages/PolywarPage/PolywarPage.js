@@ -11,7 +11,7 @@ class PolywarPage extends Component {
         return (
             <React.Fragment>
                 <main>
-                    <SectionHeader text={'Purchase Tracker'} />
+                    <SectionHeader text={'Polywar'} />
                     <article className='project-page'>
                         <img src={require('./images/polywar-thumbnail.jpg')} className='project-page-header-image' alt='Purchase Tracker thumbnail' />
                         <div>
