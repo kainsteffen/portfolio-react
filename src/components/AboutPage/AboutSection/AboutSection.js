@@ -20,7 +20,7 @@ class AboutSection extends Component {
                             attention to detail are what define me.
                         </p>
                         <div className='download-button-container'>
-                            <CustomButton label={'Download Resume'} onClick={this.handleDownloadButtonPress} />
+                            <CustomButton label={'Download Resume'} onPress={this.handleDownloadButtonPress} />
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ class AboutSection extends Component {
     }
 
     handleDownloadButtonPress() {
-        console.log("bruh");
+        window.open('https://drive.google.com/uc?export=download&id=111EQ18gJFZNA9ONQzHbK2evu1ybE6M32');
     }
 }
 
