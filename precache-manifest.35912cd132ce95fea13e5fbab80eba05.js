@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/purchase-tracker-logo.b95ee492.svg"
   },
   {
-    "revision": "7f891435fb698e5d8c06",
-    "url": "/static/css/main.98351746.chunk.css"
+    "revision": "6b771862028ea75ef5a4",
+    "url": "/static/css/main.d5d6523b.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "a04fc2bbfe82a58e6537",
-    "url": "/static/js/2.5672c4b0.chunk.js"
+    "revision": "ac7412f3629c3b2b37e1",
+    "url": "/static/js/2.26a27a04.chunk.js"
   },
   {
     "revision": "6bfd0bb232385ab71662ebb473d06f27",
@@ -60,8 +60,8 @@ self.__precacheManifest = [
     "url": "/static/media/purchase-tracker-thumbnail.a4a7a0f5.png"
   },
   {
-    "revision": "7f891435fb698e5d8c06",
-    "url": "/static/js/main.f1f35ed8.chunk.js"
+    "revision": "6b771862028ea75ef5a4",
+    "url": "/static/js/main.adceb64b.chunk.js"
   },
   {
     "revision": "d17fa900995ad91bd246a4589c570764",
@@ -116,7 +116,7 @@ self.__precacheManifest = [
     "url": "/static/media/polywar-thumbnail.4985c951.jpg"
   },
   {
-    "revision": "36345273354e9ddc0105d18e6b79620b",
+    "revision": "d49f85152f1ce9779365fb8e2871e27c",
     "url": "/index.html"
   }
 ];
