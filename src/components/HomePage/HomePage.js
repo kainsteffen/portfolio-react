@@ -46,7 +46,7 @@ class HomePage extends Component {
               logoSrc={require('./images/polywar-logo.png')}
               cardTitle='Polywar'
               cardDescription='Mobile Game | Shooter'
-              routerPath='/'
+              routerPath='/polywar'
             />
           </section>
 

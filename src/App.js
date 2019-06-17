@@ -9,7 +9,8 @@ import {
     PurchaseTrackerPage,
     UpwardsPage,
     OverlaysPage,
-    AstendoEventPage
+    AstendoEventPage,
+    PolywarPage,
 } from './components/ProjectPages';
 import './App.css';
 
@@ -33,6 +34,7 @@ class App extends Component {
                                     <Route path='/upwards' component={UpwardsPage} />
                                     <Route path='/overlays' component={OverlaysPage} />
                                     <Route path='/astendo-event' component={AstendoEventPage} />
+                                    <Route path='/polywar' component={PolywarPage} />
                                 </Switch>
                             </section>
                         </CSSTransition>
