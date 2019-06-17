@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/purchase-tracker-thumbnail.a4a7a0f5.png"
   },
   {
-    "revision": "e93e359c1411fd39f65e",
-    "url": "/static/css/main.69c860a4.chunk.css"
+    "revision": "1c1d31a654810013259c",
+    "url": "/static/css/main.634daadd.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/static/media/arrow_up.24a93bb6.svg"
   },
   {
-    "revision": "e93e359c1411fd39f65e",
+    "revision": "1c1d31a654810013259c",
     "url": "/static/js/main.e10f62a8.chunk.js"
   },
   {
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/static/media/clipboard.7e277b29.svg"
   },
   {
-    "revision": "8b101a256204d4ea98dc5b27c7fdeaca",
+    "revision": "6a56a1a9ac11d85464570c3c0694d868",
     "url": "/index.html"
   }
 ];
