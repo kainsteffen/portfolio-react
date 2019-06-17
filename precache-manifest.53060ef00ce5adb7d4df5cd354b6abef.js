@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/purchase-tracker-thumbnail.a4a7a0f5.png"
   },
   {
-    "revision": "f61f8016d0ab32a8e735",
-    "url": "/static/css/main.75ba998c.chunk.css"
+    "revision": "e93e359c1411fd39f65e",
+    "url": "/static/css/main.69c860a4.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/static/js/2.53e3b718.chunk.js"
   },
   {
-    "revision": "9838ea6b336247d55c55cae8b992b527",
-    "url": "/static/media/apple-logo.9838ea6b.svg"
+    "revision": "6bfd0bb232385ab71662ebb473d06f27",
+    "url": "/static/media/apple-logo.6bfd0bb2.svg"
   },
   {
     "revision": "1884018a7237d094218018997748867e",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/arrow-right.11ea5efb.svg"
   },
   {
-    "revision": "4130c5fa4c0a033397ccede81f6aeebf",
-    "url": "/static/media/logo.4130c5fa.svg"
+    "revision": "f705e66447ce0e2bfc867fe87bab6a03",
+    "url": "/static/media/logo.f705e664.svg"
   },
   {
     "revision": "221be612391dbda024845ef0ab62114c",
@@ -40,28 +40,28 @@ self.__precacheManifest = [
     "url": "/static/media/arrow-down.c3d75740.svg"
   },
   {
-    "revision": "fbfd1ec2d4beb2256cde3b90a84bbfe2",
-    "url": "/static/media/github-logo.fbfd1ec2.svg"
+    "revision": "c885c3a75d4d4144342751cd4fa0b710",
+    "url": "/static/media/github-logo.c885c3a7.svg"
   },
   {
-    "revision": "919c0aa65e546bc1b0da050ffc9c78ab",
-    "url": "/static/media/linkedin-logo.919c0aa6.svg"
+    "revision": "123fc1789a368c85f78e01533cdf39d8",
+    "url": "/static/media/linkedin-logo.123fc178.svg"
   },
   {
-    "revision": "1077cf72d18dc7106b596629a7fae4ee",
-    "url": "/static/media/xing-logo.1077cf72.svg"
+    "revision": "abc01c0d47117c439522551090458b2f",
+    "url": "/static/media/xing-logo.abc01c0d.svg"
   },
   {
     "revision": "24a93bb6a956c41e0f5fde63df92e183",
     "url": "/static/media/arrow_up.24a93bb6.svg"
   },
   {
-    "revision": "f61f8016d0ab32a8e735",
-    "url": "/static/js/main.cb3bd61c.chunk.js"
+    "revision": "e93e359c1411fd39f65e",
+    "url": "/static/js/main.e10f62a8.chunk.js"
   },
   {
-    "revision": "9046aea50f1dc798f93beb5acd82eee4",
-    "url": "/static/media/purchase-tracker-logo.9046aea5.svg"
+    "revision": "b95ee492a70052a458bef035fa70d9e4",
+    "url": "/static/media/purchase-tracker-logo.b95ee492.svg"
   },
   {
     "revision": "d17fa900995ad91bd246a4589c570764",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "url": "/static/media/overlays-thumbnail.4b6be793.png"
   },
   {
-    "revision": "9683a530b635b1f141a9b6b186cd9164",
-    "url": "/static/media/overlays.9683a530.svg"
+    "revision": "05e00b962767a55e62f2f13ea4fea82c",
+    "url": "/static/media/overlays.05e00b96.svg"
   },
   {
     "revision": "1e22aed7eff019ef00c95f727511b55f",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/static/media/clipboard.7e277b29.svg"
   },
   {
-    "revision": "7a7dab73b274f620559b577922aff674",
+    "revision": "8b101a256204d4ea98dc5b27c7fdeaca",
     "url": "/index.html"
   }
 ];
