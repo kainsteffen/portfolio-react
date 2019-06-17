@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "b95ee492a70052a458bef035fa70d9e4",
-    "url": "/static/media/purchase-tracker-logo.b95ee492.svg"
+    "revision": "a4a7a0f5265422dc57231473877cb3d1",
+    "url": "/static/media/purchase-tracker-thumbnail.a4a7a0f5.png"
   },
   {
-    "revision": "6b771862028ea75ef5a4",
-    "url": "/static/css/main.d5d6523b.chunk.css"
+    "revision": "aedca4d9c940513c0a85",
+    "url": "/static/css/main.f8aa1d4b.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "ac7412f3629c3b2b37e1",
-    "url": "/static/js/2.26a27a04.chunk.js"
+    "revision": "f54af7a808faf01a0992",
+    "url": "/static/js/2.6d9fae27.chunk.js"
   },
   {
     "revision": "6bfd0bb232385ab71662ebb473d06f27",
@@ -56,12 +56,12 @@ self.__precacheManifest = [
     "url": "/static/media/arrow_up.24a93bb6.svg"
   },
   {
-    "revision": "a4a7a0f5265422dc57231473877cb3d1",
-    "url": "/static/media/purchase-tracker-thumbnail.a4a7a0f5.png"
+    "revision": "aedca4d9c940513c0a85",
+    "url": "/static/js/main.279fa422.chunk.js"
   },
   {
-    "revision": "6b771862028ea75ef5a4",
-    "url": "/static/js/main.adceb64b.chunk.js"
+    "revision": "b95ee492a70052a458bef035fa70d9e4",
+    "url": "/static/media/purchase-tracker-logo.b95ee492.svg"
   },
   {
     "revision": "d17fa900995ad91bd246a4589c570764",
@@ -78,14 +78,6 @@ self.__precacheManifest = [
   {
     "revision": "05e00b962767a55e62f2f13ea4fea82c",
     "url": "/static/media/overlays.05e00b96.svg"
-  },
-  {
-    "revision": "1e22aed7eff019ef00c95f727511b55f",
-    "url": "/static/media/astendo-event-thumbnail.1e22aed7.png"
-  },
-  {
-    "revision": "2021b08ee7da9fa87c0d50f71e732a2d",
-    "url": "/static/media/astendo-event-logo.2021b08e.png"
   },
   {
     "revision": "4985c9515e2ae9bac3e3252a1445b5d4",
@@ -112,11 +104,15 @@ self.__precacheManifest = [
     "url": "/static/media/clipboard.7e277b29.svg"
   },
   {
+    "revision": "1e22aed7eff019ef00c95f727511b55f",
+    "url": "/static/media/astendo-event-thumbnail.1e22aed7.png"
+  },
+  {
     "revision": "4985c9515e2ae9bac3e3252a1445b5d4",
     "url": "/static/media/polywar-thumbnail.4985c951.jpg"
   },
   {
-    "revision": "d49f85152f1ce9779365fb8e2871e27c",
+    "revision": "bd9b5d8730be2ee86489818b5ac0b8d1",
     "url": "/index.html"
   }
 ];
