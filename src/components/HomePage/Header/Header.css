@@ -18,11 +18,10 @@
     justify-content: center;
 }
 
-.header-quote img {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
+.header-quote .quotation-mark {
+    width: 35px;
+    height: 35px;
+    margin: 7px 20px 0 0;
 }
 
 .header-quote h1 {

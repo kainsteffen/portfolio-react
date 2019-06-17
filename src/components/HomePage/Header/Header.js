@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazy-load';
 import './Header.css';
 import './pong.js';
 import '../../BallGridAnimation/BallGridAnimation';
@@ -23,7 +24,9 @@ class Header extends Component {
           <BallGridAnimation size={100} rows={3} columns={3} animationSpeed={500} animationDelay={1000} />
         </div>
         <div className='header-quote fadeIn-slideInFromBelow'>
-          <img src={require('./images/quotation-mark.svg')} alt='Quotation mark' />
+          <LazyLoad>
+            <img src={require('./images/quotation-mark.svg')} alt='Quotation mark' className='quotation-mark' />
+          </LazyLoad>
           <div className='header-titles'>
             <h1>Hi, I'm Khanh</h1>
             <h2> I'm good at pushing pixels around the screen.</h2>
