@@ -34,6 +34,7 @@ class HomePage extends Component {
               cardDescription='Mobile Game | Educational'
               routerPath='/overlays'
             />
+            {/*
             <ProjectCard
               imgSrc={require('./images/astendo-event-thumbnail.png')}
               logoSrc={require('./images/astendo-event-logo.png')}
@@ -41,6 +42,7 @@ class HomePage extends Component {
               cardDescription='Mobile App | Events'
               routerPath='/astendo-event'
             />
+            */}
             <ProjectCard
               imgSrc={require('./images/polywar.jpg')}
               logoSrc={require('./images/polywar-logo.png')}
