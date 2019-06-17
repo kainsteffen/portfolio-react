@@ -1,9 +1,3 @@
-.project-page-header-image {
-    width: 50%;
-    height: 50%;
-    margin-right: 30px;
-}
-
 .project-page {
     display: flex;
 }
@@ -40,7 +34,6 @@
     .project-page-header-image {
         margin-bottom: 20px;
         width: 100%;
-        height: 100%;
     }
     .project-page-links {
         justify-content: center;
@@ -78,5 +71,10 @@
     }
     .project-page-links button {
         width: 150px;
+    }
+    .project-page-header-image {
+        width: 50%;
+        height: 50%;
+        margin-right: 30px;
     }
 }
