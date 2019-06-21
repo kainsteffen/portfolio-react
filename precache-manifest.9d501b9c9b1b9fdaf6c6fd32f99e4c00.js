@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/purchase-tracker-thumbnail.a4a7a0f5.png"
   },
   {
-    "revision": "1359ef731cee3582482f",
-    "url": "/static/css/main.f69870dd.chunk.css"
+    "revision": "3cc99c545f1979ce96eb",
+    "url": "/static/css/main.0bd94c89.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/static/media/arrow_up.24a93bb6.svg"
   },
   {
-    "revision": "1359ef731cee3582482f",
+    "revision": "3cc99c545f1979ce96eb",
     "url": "/static/js/main.279fa422.chunk.js"
   },
   {
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/static/media/polywar-thumbnail.4985c951.jpg"
   },
   {
-    "revision": "8179b1c9dd61ad894d1a81c6fef6f905",
+    "revision": "895e62395a4936a1aafa75cfeeed53e4",
     "url": "/index.html"
   }
 ];
