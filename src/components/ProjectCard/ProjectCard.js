@@ -8,7 +8,7 @@ class ProjectCard extends Component {
             <Link to={this.props.routerPath} className='project-card'>
                 <img src={this.props.imgSrc} className='project-card-image' alt='Project thumbnail' />
                 <div className='project-card-description'>
-                    <img src={this.props.logoSrc} alt="Project Logo" className='project-card-logo' />
+                    <img src={this.props.logoSrc} alt='Project Logo' className='project-card-logo' />
                     <div className='project-card-text'>
                         <h4 className='project-card-title'>
                             {this.props.cardTitle}

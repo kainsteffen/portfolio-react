@@ -43,7 +43,7 @@ function MottoCard(props) {
                     <br></br>
                     {props.title}
                 </h4>
-                <img src={props.image} alt="Placeholder" />
+                <img src={props.image} alt='Placeholder' />
             </div>
             <div className='motto-description'>
                 {props.description}

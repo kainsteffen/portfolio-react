@@ -36,7 +36,7 @@
 }
 
 .navbar-right #active:after {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   bottom: -5px;
@@ -47,7 +47,7 @@
 }
 
 .navbar-right a:after {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   bottom: -5px;

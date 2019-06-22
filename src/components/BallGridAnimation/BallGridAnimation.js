@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import styled, { keyframes } from "styled-components";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import styled, { keyframes } from 'styled-components';
 
 class BallGridAnimation extends Component {
     constructor(props) {
@@ -155,7 +155,7 @@ const getBalls = ({ matrix, frontColor, size, sizeUnit }) => {
             matrix[y][x] !== 'empty' && balls.push(
                 <Ball
                     // Gradient colorize the balls if there are less than 9
-                    frontColor={ballCount <= 9 ? "rgba(0, 0, 0, " + (1 - keyValue / 10) + ")" : frontColor}
+                    frontColor={ballCount <= 9 ? 'rgba(0, 0, 0, ' + (1 - keyValue / 10) + ')' : frontColor}
                     size={size}
                     x={x * (size / 3 + size / 15)}
                     y={y * (size / 3 + size / 15)}
@@ -213,8 +213,8 @@ BallGridAnimation.defaultProps = {
     rows: 3,
     columns: 3,
     size: 40,
-    frontColor: "rgba(0, 0, 0, 1)",
-    sizeUnit: "px",
+    frontColor: 'rgba(0, 0, 0, 1)',
+    sizeUnit: 'px',
     animationSpeed: 500,
     animationDelay: 1000,
 };

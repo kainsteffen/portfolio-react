@@ -21,13 +21,13 @@ class Navbar extends Component {
     render() {
         if (!this.state.isScrolled) {
             return (
-                <nav className="navbar fadeIn">
+                <nav className='navbar fadeIn'>
                     <h1>
                         <Link to='/'>
                             <img src={require('./images/logo.svg')} className='logo' alt='Khanh Steffen' />
                         </Link>
                     </h1>
-                    <ul className="navbar-right">
+                    <ul className='navbar-right'>
                         <Link to='/' id={this.props.location.pathname === '/' ? 'active' : undefined}>WORK</Link>
                         <Link to='/about' id={this.props.location.pathname === '/about' ? 'active' : undefined}>ABOUT</Link>
                     </ul>
