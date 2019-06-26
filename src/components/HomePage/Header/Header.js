@@ -21,7 +21,14 @@ class Header extends Component {
     return (
       <div id='header-container'>
         <div className='header-animation-container'>
-          <BallGridAnimation size={100} rows={3} columns={3} animationSpeed={500} animationDelay={1000} />
+          <BallGridAnimation
+            size={100}
+            rows={3}
+            columns={3}
+            emptyStartPosition={{ x: 2, y: 2 }}
+            animationSpeed={500}
+            animationDelay={1000}
+          />
         </div>
         <div className='header-quote fadeIn-slideInFromBelow'>
           <LazyLoad>
