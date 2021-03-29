@@ -3,9 +3,10 @@ import "./CustomButton.css";
 
 function CustomButton(props) {
   return (
-    <button className="custom-button" onClick={props.onPress}>
+    <button type="button" className="custom-button" onClick={props.onPress}>
       {props.leadingIcon && <img src={props.leadingIcon} alt="Button icon" />}
-      <label>{props.label}</label>
+      {/* <label>{props.label}</label> */}
+      <div>{props.label}</div>
     </button>
   );
 }

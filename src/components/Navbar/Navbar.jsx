@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import "./Navbar.css";
-import HamburgerButton from "./HamburgerButton/HamburgerButton.js";
-import MobileNavbar from "./MobileNavbar/MobileNavbar.js";
+import HamburgerButton from "./HamburgerButton/HamburgerButton";
+import MobileNavbar from "./MobileNavbar/MobileNavbar";
+import logo from "./images/logo.svg";
 
 class Navbar extends Component {
   constructor(props) {
@@ -18,17 +19,32 @@ class Navbar extends Component {
     window.removeEventListener("scroll", this.handleScroll.bind(this));
   }
 
+  handleClick = () => {
+    this.setState((state) => ({
+      isToggled: !state.isToggled,
+    }));
+  };
+
+  handleScroll = () => {
+    const scrollTop = window.pageYOffset;
+    if (scrollTop > 0) {
+      this.setState({
+        // isScrolled: true,
+      });
+    } else if (scrollTop === 0) {
+      this.setState({
+        // isScrolled: false,
+      });
+    }
+  };
+
   render() {
     if (!this.state.isScrolled) {
       return (
         <nav className="navbar fadeIn">
           <h1>
             <Link to="/">
-              <img
-                src={require("./images/logo.svg")}
-                className="logo"
-                alt="Khanh Steffen"
-              />
+              <img src={logo} className="logo" alt="Khanh Steffen" />
             </Link>
           </h1>
           <ul className="navbar-right">
@@ -49,36 +65,16 @@ class Navbar extends Component {
           </ul>
           <HamburgerButton
             isCollapsed={this.state.isToggled}
-            onClick={this.handleClick.bind(this)}
+            onClick={this.handleClick}
           />
           <MobileNavbar
             isToggled={this.state.isToggled}
-            onClick={this.handleClick.bind(this)}
+            onClick={this.handleClick}
           />
         </nav>
       );
-    } else {
-      return <div />;
     }
-  }
-
-  handleClick() {
-    this.setState((state) => ({
-      isToggled: !state.isToggled,
-    }));
-  }
-
-  handleScroll(event) {
-    let scrollTop = window.pageYOffset;
-    if (scrollTop > 0) {
-      this.setState({
-        //isScrolled: true,
-      });
-    } else if (scrollTop === 0) {
-      this.setState({
-        //isScrolled: false,
-      });
-    }
+    return <div />;
   }
 }
 

@@ -1,17 +1,29 @@
 import React, { Component } from "react";
 import "../ProjectPage.css";
-import SectionHeader from "../../SectionHeader/SectionHeader.js";
-import Footer from "../../Footer/Footer.js";
-import TagsList from "../../TagsList/TagsList.js";
-import BulletList from "../../BulletList/BulletList.js";
-import CustomButton from "../../CustomButton/CustomButton.js";
+import SectionHeader from "../../SectionHeader/SectionHeader";
+import Footer from "../../Footer/Footer";
+import TagsList from "../../TagsList/TagsList";
+import BulletList from "../../BulletList/BulletList";
+import CustomButton from "../../CustomButton/CustomButton";
 
 class PurchaseTrackerPage extends Component {
+  handleAppStoreButtonPress = () => {
+    window.open(
+      "https://itunes.apple.com/de/app/purchase-tracker/id1457110640?l=en&mt=8"
+    );
+  };
+
+  handlePlayStoreButtonPress = () => {
+    window.open(
+      "https://play.google.com/store/apps/details?id=com.KAIN.purchasetracker"
+    );
+  };
+
   render() {
     return (
-      <React.Fragment>
+      <>
         <main>
-          <SectionHeader text={"Purchase Tracker"} />
+          <SectionHeader text="Purchase Tracker" />
           <article className="project-page">
             <img
               src={require("./images/purchase-tracker-thumbnail.png")}
@@ -45,32 +57,20 @@ class PurchaseTrackerPage extends Component {
                 <CustomButton
                   label="App Store"
                   leadingIcon={require("../images/apple-logo.svg")}
-                  onPress={this.handleAppStoreButtonPress.bind(this)}
+                  onPress={this.handleAppStoreButtonPress}
                 />
 
                 <CustomButton
                   label="Google Play"
                   leadingIcon={require("../images/android-logo.svg")}
-                  onPress={this.handlePlayStoreButtonPress.bind(this)}
+                  onPress={this.handlePlayStoreButtonPress}
                 />
               </div>
             </div>
           </article>
         </main>
         <Footer />
-      </React.Fragment>
-    );
-  }
-
-  handleAppStoreButtonPress() {
-    window.open(
-      "https://itunes.apple.com/de/app/purchase-tracker/id1457110640?l=en&mt=8"
-    );
-  }
-
-  handlePlayStoreButtonPress() {
-    window.open(
-      "https://play.google.com/store/apps/details?id=com.KAIN.purchasetracker"
+      </>
     );
   }
 }

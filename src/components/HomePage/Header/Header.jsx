@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import LazyLoad from "react-lazy-load";
 import "./Header.css";
-import "./pong.js";
-import "../../BallGridAnimation/BallGridAnimation";
 import BallGridAnimation from "../../BallGridAnimation/BallGridAnimation";
+import quotationMarkIcon from "./images/quotation-mark.svg";
+import arrowDownIcon from "./images/arrow-down.svg";
 
 class Header extends Component {
   constructor(props) {
@@ -13,9 +13,18 @@ class Header extends Component {
 
   componentDidMount() {
     const height = document.getElementById("header-container").clientHeight;
-    let componentHeight = height + 0.15 * height;
+    const componentHeight = height + 0.15 * height;
     this.setState({ componentHeight });
   }
+
+  handleArrowDownButtonPress = () => {
+    if (window.pageYOffset < this.state.componentHeight)
+      window.scrollTo({
+        top: this.state.componentHeight,
+        left: 0,
+        behavior: "smooth",
+      });
+  };
 
   render() {
     return (
@@ -33,39 +42,27 @@ class Header extends Component {
         <div className="header-quote fadeIn-slideInFromBelow">
           <LazyLoad>
             <img
-              src={require("./images/quotation-mark.svg")}
+              src={quotationMarkIcon}
               alt="Quotation mark"
               className="quotation-mark"
             />
           </LazyLoad>
           <div className="header-titles">
-            <h1>Hi, I'm Khanh</h1>
-            <h2> I'm good at pushing pixels around the screen.</h2>
+            <h1>Hi, I&apos;m Khanh</h1>
+            <h2> I&apos;m good at pushing pixels around the screen.</h2>
           </div>
         </div>
         {window.pageYOffset < this.state.componentHeight && (
           <button
+            type="button"
             className="arrow-down-button fadeIn"
-            onClick={this.handleArrowDownButtonPress.bind(this)}
+            onClick={this.handleArrowDownButtonPress}
           >
-            <img
-              src={require("./images/arrow-down.svg")}
-              alt="Arrow down"
-              className="fadeIn"
-            />
+            <img src={arrowDownIcon} alt="Arrow down" className="fadeIn" />
           </button>
         )}
       </div>
     );
-  }
-
-  handleArrowDownButtonPress() {
-    if (window.pageYOffset < this.state.componentHeight)
-      window.scrollTo({
-        top: this.state.componentHeight,
-        left: 0,
-        behavior: "smooth",
-      });
   }
 }
 

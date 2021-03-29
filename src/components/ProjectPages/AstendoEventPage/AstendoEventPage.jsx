@@ -1,17 +1,29 @@
 import React, { Component } from "react";
 import "../ProjectPage.css";
-import SectionHeader from "../../SectionHeader/SectionHeader.js";
-import Footer from "../../Footer/Footer.js";
-import TagsList from "../../TagsList/TagsList.js";
-import BulletList from "../../BulletList/BulletList.js";
-import CustomButton from "../../CustomButton/CustomButton.js";
+import SectionHeader from "../../SectionHeader/SectionHeader";
+import Footer from "../../Footer/Footer";
+import TagsList from "../../TagsList/TagsList";
+import BulletList from "../../BulletList/BulletList";
+import CustomButton from "../../CustomButton/CustomButton";
 
 class AstendoEventPage extends Component {
+  handleAppStoreButtonPress = () => {
+    window.open(
+      "https://itunes.apple.com/de/app/upwards-arcade-jumper/id1464653731?l=en&mt=8"
+    );
+  };
+
+  handlePlayStoreButtonPress = () => {
+    window.open(
+      "https://play.google.com/store/apps/details?id=de.astendo.app&hl=de"
+    );
+  };
+
   render() {
     return (
-      <React.Fragment>
+      <>
         <main>
-          <SectionHeader text={"astendo Event"} />
+          <SectionHeader text="astendo Event" />
           <article className="project-page">
             <img
               src={require("./images/astendo-event-thumbnail.png")}
@@ -28,10 +40,10 @@ class AstendoEventPage extends Component {
                 skills={["Flutter", "Dart", "Redux"]}
               />
               <p>
-                astendo Event is a mobile companion app to astendo GmbH's Event
-                Manager software package which is used to organize real-life
-                events. The app facilitates communication and information flow
-                between event goers and event hosts.
+                astendo Event is a mobile companion app to astendo GmbH&apos;s
+                Event Manager software package which is used to organize
+                real-life events. The app facilitates communication and
+                information flow between event goers and event hosts.
                 <br />
                 <br />I was personally responsible for the creation of screens
                 and UI components, peer-reviewing code and internationalisation
@@ -51,32 +63,20 @@ class AstendoEventPage extends Component {
                 <CustomButton
                   label="App Store"
                   leadingIcon={require("../images/apple-logo.svg")}
-                  onPress={this.handleAppStoreButtonPress.bind(this)}
+                  onPress={this.handleAppStoreButtonPress}
                 />
 
                 <CustomButton
                   label="Google Play"
                   leadingIcon={require("../images/android-logo.svg")}
-                  onPress={this.handlePlayStoreButtonPress.bind(this)}
+                  onPress={this.handlePlayStoreButtonPress}
                 />
               </div>
             </div>
           </article>
         </main>
         <Footer />
-      </React.Fragment>
-    );
-  }
-
-  handleAppStoreButtonPress() {
-    window.open(
-      "https://itunes.apple.com/de/app/upwards-arcade-jumper/id1464653731?l=en&mt=8"
-    );
-  }
-
-  handlePlayStoreButtonPress() {
-    window.open(
-      "https://play.google.com/store/apps/details?id=de.astendo.app&hl=de"
+      </>
     );
   }
 }

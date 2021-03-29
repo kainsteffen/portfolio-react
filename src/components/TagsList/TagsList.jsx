@@ -6,8 +6,8 @@ function TagsList(props) {
     <div className="tags-list">
       <h4>{props.title}</h4>
       <ul>
-        {props.skills.map((skill, index) => (
-          <li key={index}>{skill}</li>
+        {props.skills.map((skill) => (
+          <li key={skill}>{skill}</li>
         ))}
       </ul>
     </div>

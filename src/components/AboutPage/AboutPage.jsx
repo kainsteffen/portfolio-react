@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 import "./AboutPage.css";
-import AboutSection from "./AboutSection/AboutSection.js";
-import MottoSection from "./MottoSection/MottoSection.js";
-import SkillsSection from "./SkillsSection/SkillsSection.js";
-import Footer from "../Footer/Footer.js";
+import AboutSection from "./AboutSection/AboutSection";
+import MottoSection from "./MottoSection/MottoSection";
+import SkillsSection from "./SkillsSection/SkillsSection";
+import Footer from "../Footer/Footer";
 
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         <main>
           <AboutSection />
           <MottoSection />
           <SkillsSection />
         </main>
         <Footer />
-      </React.Fragment>
+      </>
     );
   }
 }

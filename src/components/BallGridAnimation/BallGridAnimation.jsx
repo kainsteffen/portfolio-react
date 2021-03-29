@@ -2,6 +2,37 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled, { keyframes } from "styled-components";
 
+const buildBallGrid = ({ matrix, color, size, sizeUnit }) => {
+  const ballCount = matrix.length * matrix[0].length;
+  let ballGrid = [];
+  for (let y = 0; y < matrix.length; y += 1) {
+    for (let x = 0; x < matrix[0].length; x += 1) {
+      const keyValue = matrix[y][x];
+
+      if (matrix[y][x] !== "empty") {
+        ballGrid.push(
+          <Ball
+            // Gradient colorize the balls if there are less than 9
+            color={
+              ballCount <= 9 ? `rgba(0, 0, 0, ${1 - keyValue / 10})` : color
+            }
+            size={size}
+            x={x * (size / 3 + size / 15)}
+            y={y * (size / 3 + size / 15)}
+            key={keyValue}
+            index={keyValue}
+            sizeUnit={sizeUnit}
+          />
+        );
+      }
+    }
+  }
+
+  // The order of the array items needs to stay consistent for rendering and animating
+  ballGrid = ballGrid.sort((a, b) => a.props.index - b.props.index);
+  return ballGrid;
+};
+
 class BallGridAnimation extends Component {
   constructor(props) {
     super(props);
@@ -21,59 +52,74 @@ class BallGridAnimation extends Component {
   }
 
   componentDidMount() {
-    setTimeout(
-      function () {
-        var intervalId = setInterval(
-          this.moveSingleBall.bind(this),
-          this.props.animationSpeed
-        );
-        this.setState({ intervalId: intervalId });
-      }.bind(this),
-      1000
-    );
+    setTimeout(() => {
+      const intervalId = setInterval(
+        this.moveSingleBall.bind(this),
+        this.props.animationSpeed
+      );
+      this.setState({ intervalId });
+    }, 1000);
   }
 
   componentWillUnmount() {
     clearInterval(this.state.intervalId);
   }
 
-  render() {
-    return (
-      <Wrapper
-        size={this.props.size}
-        sizeUnit={this.props.sizeUnit}
-        onClick={this.randomizeBalls.bind(this)}
-      >
-        {buildBallGrid({
-          matrix: this.state.balls,
-          color: this.props.color,
-          size: this.props.size,
-          sizeUnit: this.props.sizeUnit,
-        })}
-      </Wrapper>
-    );
-  }
+  randomizeBalls = () => {
+    let numberStack = [];
+    for (let i = 0; i < this.props.rows * this.props.columns; i += 1) {
+      numberStack.push(i);
+    }
 
-  initBallMatrix(rows, columns, emptyStartPos) {
-    var matrix = [];
-    var numberCounter = 0;
+    numberStack = this.shuffleArray(numberStack);
 
-    for (let i = 0; i < columns; i++) {
+    const matrix = [];
+    for (let i = 0; i < this.props.columns; i += 1) {
       matrix.push([]);
-      for (let j = 0; j < rows; j++) {
+      for (let j = 0; j < this.props.rows; j += 1) {
+        matrix[i].push(numberStack.pop());
+      }
+    }
+
+    this.setState({
+      balls: matrix,
+    });
+  };
+
+  shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      /* eslint-disable no-param-reassign */
+      const temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+      /* eslint-enable  no-param-reassign */
+    }
+    return array;
+  };
+
+  initBallMatrix = (rows, columns, emptyStartPos) => {
+    const matrix = [];
+    let numberCounter = 0;
+
+    for (let i = 0; i < columns; i += 1) {
+      matrix.push([]);
+      for (let j = 0; j < rows; j += 1) {
         matrix[i].push(numberCounter);
-        numberCounter++;
+        numberCounter += 1;
       }
     }
 
     matrix[emptyStartPos.y][emptyStartPos.x] = "empty";
 
     return matrix;
-  }
+  };
 
-  moveSingleBall() {
-    var matrix = this.state.balls;
-    let emptyPos = this.state.emptyPosition;
+  moveSingleBall = () => {
+    /* eslint-disable react/no-access-state-in-setstate */
+    const matrix = this.state.balls;
+    const emptyPos = this.state.emptyPosition;
+    /* eslint-enable react/no-access-state-in-setstate */
     let availableBalls = [];
 
     //  Check for available balls around empty position
@@ -100,11 +146,11 @@ class BallGridAnimation extends Component {
       : availableBalls;
 
     // Choose random target ball to move to empty position
-    let targetPos = availableBalls[this.getRandomInt(availableBalls.length)];
+    const targetPos = availableBalls[this.getRandomInt(availableBalls.length)];
 
     //  Swap values of target ball and empty position
-    let emptyValue = matrix[emptyPos.y][emptyPos.x];
-    let targetValue = matrix[targetPos.y][targetPos.x];
+    const emptyValue = matrix[emptyPos.y][emptyPos.x];
+    const targetValue = matrix[targetPos.y][targetPos.x];
     matrix[emptyPos.y][emptyPos.x] = targetValue;
     matrix[targetPos.y][targetPos.x] = emptyValue;
 
@@ -114,77 +160,27 @@ class BallGridAnimation extends Component {
       lastEmptyPosition: emptyPos,
       emptyPosition: targetPos,
     });
-  }
+  };
 
-  randomizeBalls() {
-    var numberStack = [];
-    for (let i = 0; i < this.props.rows * this.props.columns; i++) {
-      numberStack.push(i);
-    }
+  getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
 
-    numberStack = this.shuffleArray(numberStack);
-
-    var matrix = [];
-    for (let i = 0; i < this.props.columns; i++) {
-      matrix.push([]);
-      for (let j = 0; j < this.props.rows; j++) {
-        matrix[i].push(numberStack.pop());
-      }
-    }
-
-    this.setState({
-      balls: matrix,
-    });
-  }
-
-  shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
-    }
-    return array;
-  }
-
-  getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
+  render() {
+    return (
+      <Wrapper
+        size={this.props.size}
+        sizeUnit={this.props.sizeUnit}
+        onClick={this.randomizeBalls}
+      >
+        {buildBallGrid({
+          matrix: this.state.balls,
+          color: this.props.color,
+          size: this.props.size,
+          sizeUnit: this.props.sizeUnit,
+        })}
+      </Wrapper>
+    );
   }
 }
-
-const buildBallGrid = ({ matrix, color, size, sizeUnit }) => {
-  var ballCount = matrix.length * matrix[0].length;
-  var ballGrid = [];
-  for (let y = 0; y < matrix.length; y++) {
-    for (let x = 0; x < matrix[0].length; x++) {
-      let keyValue = matrix[y][x];
-      matrix[y][x] !== "empty" &&
-        ballGrid.push(
-          <Ball
-            // Gradient colorize the balls if there are less than 9
-            color={
-              ballCount <= 9
-                ? "rgba(0, 0, 0, " + (1 - keyValue / 10) + ")"
-                : color
-            }
-            size={size}
-            x={x * (size / 3 + size / 15)}
-            y={y * (size / 3 + size / 15)}
-            key={keyValue}
-            index={keyValue}
-            sizeUnit={sizeUnit}
-          />
-        );
-    }
-  }
-
-  // The order of the array items needs to stay consistent for rendering and animating
-  ballGrid = ballGrid.sort(function (a, b) {
-    return a.props.index - b.props.index;
-  });
-
-  return ballGrid;
-};
 
 export default BallGridAnimation;
 
@@ -197,7 +193,7 @@ const Wrapper = styled.div`
   height: ${(props) => `${props.size}${props.sizeUnit}`};
 `;
 
-const scaleUpAnim = (props) => keyframes`
+const scaleUpAnim = () => keyframes`
     from {
         transform: scale(0);
     }
@@ -228,7 +224,6 @@ BallGridAnimation.defaultProps = {
   color: "rgba(0, 0, 0, 1)",
   sizeUnit: "px",
   animationSpeed: 500,
-  animationDelay: 1000,
 };
 
 BallGridAnimation.propTypes = {
@@ -237,7 +232,5 @@ BallGridAnimation.propTypes = {
   size: PropTypes.number,
   color: PropTypes.string,
   sizeUnit: PropTypes.string,
-  index: PropTypes.number,
   animationSpeed: PropTypes.number,
-  animationDelay: PropTypes.number,
 };

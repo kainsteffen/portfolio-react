@@ -1,10 +1,10 @@
 import React from "react";
-import * as serviceWorker from "./serviceWorker";
 import ReactDOM from "react-dom";
 import { HashRouter as Router } from "react-router-dom";
+import * as serviceWorker from "./serviceWorker";
 import "./index.css";
 import "./animations.css";
-import App from "./App.js";
+import App from "./App";
 
 const app = (
   <Router basename="/">

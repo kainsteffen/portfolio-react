@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import "./MottoSection.css";
-import SectionHeader from "../../SectionHeader/SectionHeader.js";
+import SectionHeader from "../../SectionHeader/SectionHeader";
+import arrowRightIcon from "./images/arrow-right.svg";
+import brushIcon from "./images/brush.svg";
+import wrenchIcon from "./images/wrench.svg";
+import clipBoardIcon from "./images/clipboard.svg";
 
 class MottoSection extends Component {
   render() {
@@ -12,10 +16,10 @@ class MottoSection extends Component {
             index="01"
             title="Design"
             description="I have a keen eye for aesthetics and am always in pursuit for the most visually pleasing product."
-            image={require("./images/brush.svg")}
+            image={brushIcon}
           />
           <img
-            src={require("./images/arrow-right.svg")}
+            src={arrowRightIcon}
             className="motto-connector"
             alt="Arrow right"
           />
@@ -23,10 +27,10 @@ class MottoSection extends Component {
             index="02"
             title="Develop"
             description="I strive for understandable systems that are consistently extensible and improveable."
-            image={require("./images/wrench.svg")}
+            image={wrenchIcon}
           />
           <img
-            src={require("./images/arrow-right.svg")}
+            src={arrowRightIcon}
             className="motto-connector"
             alt="Arrow right"
           />
@@ -34,7 +38,7 @@ class MottoSection extends Component {
             index="03"
             title="Deliver"
             description="I value products that offer quality experiences but are nevertheless finished in a timely manner."
-            image={require("./images/clipboard.svg")}
+            image={clipBoardIcon}
           />
         </div>
       </section>
@@ -48,10 +52,10 @@ function MottoCard(props) {
       <div className="motto-header">
         <h4>
           {props.index}
-          <br></br>
+          <br />
           {props.title}
         </h4>
-        <img src={props.image} alt="Placeholder" />
+        <img src={props.image} alt="Icon" />
       </div>
       <div className="motto-description">{props.description}</div>
     </div>

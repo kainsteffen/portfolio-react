@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./HomePage.css";
-import ProjectCard from "../../components/ProjectCard/ProjectCard.js";
-import SectionHeader from "../../components/SectionHeader/SectionHeader.js";
-import Header from "./Header/Header.js";
-import Footer from "../../components/Footer/Footer.js";
+import ProjectCard from "../ProjectCard/ProjectCard";
+import SectionHeader from "../SectionHeader/SectionHeader";
+import Header from "./Header/Header";
+import Footer from "../Footer/Footer";
 
 class HomePage extends Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         <main>
           <Header />
           <SectionHeader text="My Projects" />
@@ -53,7 +53,7 @@ class HomePage extends Component {
           </section>
         </main>
         <Footer />
-      </React.Fragment>
+      </>
     );
   }
 }

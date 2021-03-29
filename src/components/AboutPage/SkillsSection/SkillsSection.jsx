@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./SkillsSection.css";
-import SectionHeader from "../../SectionHeader/SectionHeader.js";
-import TagsList from "../../TagsList/TagsList.js";
+import SectionHeader from "../../SectionHeader/SectionHeader";
+import TagsList from "../../TagsList/TagsList";
 
 class SkillsSection extends Component {
   render() {

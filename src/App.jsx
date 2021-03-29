@@ -24,7 +24,7 @@ class App extends Component {
             <CSSTransition
               key={this.props.location.pathname}
               timeout={500}
-              className={"fade"}
+              className="fade"
             >
               <section className="route-section">
                 <Switch location={this.props.location}>

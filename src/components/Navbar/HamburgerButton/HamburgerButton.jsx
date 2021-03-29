@@ -4,6 +4,7 @@ import "./HamburgerButton.css";
 function HamburgerButton(props) {
   return (
     <button
+      type="button"
       className={
         props.isCollapsed ? "hamburger-button collapsed" : "hamburger-button"
       }

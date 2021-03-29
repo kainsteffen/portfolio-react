@@ -1,17 +1,29 @@
 import React, { Component } from "react";
 import "../ProjectPage.css";
-import SectionHeader from "../../SectionHeader/SectionHeader.js";
-import Footer from "../../Footer/Footer.js";
-import TagsList from "../../TagsList/TagsList.js";
-import BulletList from "../../BulletList/BulletList.js";
-import CustomButton from "../../CustomButton/CustomButton.js";
+import SectionHeader from "../../SectionHeader/SectionHeader";
+import Footer from "../../Footer/Footer";
+import TagsList from "../../TagsList/TagsList";
+import BulletList from "../../BulletList/BulletList";
+import CustomButton from "../../CustomButton/CustomButton";
 
 class OverlaysPage extends Component {
+  handleAppStoreButtonPress = () => {
+    window.open(
+      "https://itunes.apple.com/de/app/purchase-tracker/id1457110640?l=en&mt=8"
+    );
+  };
+
+  handlePlayStoreButtonPress = () => {
+    window.open(
+      "https://play.google.com/store/apps/details?id=com.overlaysteam.overlays"
+    );
+  };
+
   render() {
     return (
-      <React.Fragment>
+      <>
         <main>
-          <SectionHeader text={"Overlays"} />
+          <SectionHeader text="Overlays" />
           <article className="project-page">
             <img
               src={require("./images/overlays-thumbnail.png")}
@@ -29,8 +41,9 @@ class OverlaysPage extends Component {
               <p>
                 Overlays is an educational mobile game that was made as part of
                 the IMI Showtime 2018 project convention from the HTW
-                University. The game won both the jury's and community's choice
-                awards for best Bachelor project of the show.
+                University. The game won both the jury&apos;s and
+                community&apos;s choice awards for best Bachelor project of the
+                show.
                 <br />
                 <br />
                 The game aims to introduce the player to image processing
@@ -53,26 +66,14 @@ class OverlaysPage extends Component {
                 <CustomButton
                   label="Google Play"
                   leadingIcon={require("../images/apple-logo.svg")}
-                  onPress={this.handlePlayStoreButtonPress.bind(this)}
+                  onPress={this.handlePlayStoreButtonPress}
                 />
               </div>
             </div>
           </article>
         </main>
         <Footer />
-      </React.Fragment>
-    );
-  }
-
-  handleAppStoreButtonPress() {
-    window.open(
-      "https://itunes.apple.com/de/app/purchase-tracker/id1457110640?l=en&mt=8"
-    );
-  }
-
-  handlePlayStoreButtonPress() {
-    window.open(
-      "https://play.google.com/store/apps/details?id=com.overlaysteam.overlays"
+      </>
     );
   }
 }
