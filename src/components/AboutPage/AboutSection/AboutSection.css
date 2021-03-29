@@ -1,78 +1,79 @@
 .about-section {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .about-section-container {
-    display: flex;
+  display: flex;
 }
 
 .about-section-container img {
-    display: block;
-    align-self: flex-start;
-    border-radius: 100%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: block;
+  align-self: flex-start;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .about-section-content h4 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .about-section-content p {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .about-section-container .download-button-container {
-    display: flex;
+  display: flex;
 }
 
 /* Mobile Styles */
 
 @media only screen and (max-width: 500px) {
-    .about-section-container {
-        margin-bottom: 50px;
-        flex-direction: column;
-    }
-    .about-section-container img {
-        margin: 30px auto;
-        width: 70%;
-    }
-    .about-section-container .download-button-container {
-        justify-content: center;
-    }
-    .about-section-content h4, p {
-        text-align: center;
-    }
+  .about-section-container {
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .about-section-container img {
+    margin: 30px auto;
+    width: 70%;
+  }
+  .about-section-container .download-button-container {
+    justify-content: center;
+  }
+  .about-section-content h4,
+  p {
+    text-align: center;
+  }
 }
 
 /* Tablet Styles */
 
 @media only screen and (min-width: 500px) and (max-width: 1000px) {
-    .about-section-container {
-        margin: 50px auto;
-        flex-direction: column;
-    }
-    .about-section-container img {
-        margin: 0 auto 25px auto;
-        width: 50%;
-        min-width: 200px;
-    }
-    .about-section-container .download-button-container {
-        justify-content: center;
-    }
+  .about-section-container {
+    margin: 50px auto;
+    flex-direction: column;
+  }
+  .about-section-container img {
+    margin: 0 auto 25px auto;
+    width: 50%;
+    min-width: 200px;
+  }
+  .about-section-container .download-button-container {
+    justify-content: center;
+  }
 }
 
 /* Desktop Styles */
 
 @media only screen and (min-width: 1000px) {
-    .about-section-container {
-        max-width: 675px;
-        margin: 0 auto;
-    }
-    .about-section-container img {
-        margin-right: 25px;
-        width: 30%;
-    }
-    .about-section-container .download-button-container {
-        justify-content: flex-start;
-    }
+  .about-section-container {
+    max-width: 675px;
+    margin: 0 auto;
+  }
+  .about-section-container img {
+    margin-right: 25px;
+    width: 30%;
+  }
+  .about-section-container .download-button-container {
+    justify-content: flex-start;
+  }
 }

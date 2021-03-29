@@ -1,69 +1,69 @@
 #header-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 85vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 85vh;
 }
 
 .header-animation-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
-    /* transform: rotate(45deg); */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  /* transform: rotate(45deg); */
 }
 
 .header-quote {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .header-quote .quotation-mark {
-    width: 35px;
-    height: 35px;
-    margin: 7px 20px 0 0;
+  width: 35px;
+  height: 35px;
+  margin: 7px 20px 0 0;
 }
 
 .header-quote h1 {
-    font-size: 35px;
-    margin-bottom: 15px;
+  font-size: 35px;
+  margin-bottom: 15px;
 }
 
 .header-quote h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .header-quote h1 {
-    display: inline-block;
+  display: inline-block;
 }
 
 #header-container .arrow-down-button {
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80px;
-    height: 80px;
-    transform: translatey(0px);
-    animation: float 4s ease-in-out infinite;
-    cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  height: 80px;
+  transform: translatey(0px);
+  animation: float 4s ease-in-out infinite;
+  cursor: pointer;
 }
 
 #header-container .arrow-down-button img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 @keyframes float {
-    0% {
-        transform: translatey(0px);
-    }
-    50% {
-        transform: translatey(-20px);
-    }
-    100% {
-        transform: translatey(0px);
-    }
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }

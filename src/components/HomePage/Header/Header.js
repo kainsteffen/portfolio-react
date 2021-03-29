@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import LazyLoad from 'react-lazy-load';
-import './Header.css';
-import './pong.js';
-import '../../BallGridAnimation/BallGridAnimation';
-import BallGridAnimation from '../../BallGridAnimation/BallGridAnimation';
+import React, { Component } from "react";
+import LazyLoad from "react-lazy-load";
+import "./Header.css";
+import "./pong.js";
+import "../../BallGridAnimation/BallGridAnimation";
+import BallGridAnimation from "../../BallGridAnimation/BallGridAnimation";
 
 class Header extends Component {
   constructor(props) {
@@ -12,15 +12,15 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    const height = document.getElementById('header-container').clientHeight;
+    const height = document.getElementById("header-container").clientHeight;
     let componentHeight = height + 0.15 * height;
     this.setState({ componentHeight });
   }
 
   render() {
     return (
-      <div id='header-container'>
-        <div className='header-animation-container'>
+      <div id="header-container">
+        <div className="header-animation-container">
           <BallGridAnimation
             size={100}
             rows={3}
@@ -30,28 +30,42 @@ class Header extends Component {
             animationDelay={1000}
           />
         </div>
-        <div className='header-quote fadeIn-slideInFromBelow'>
+        <div className="header-quote fadeIn-slideInFromBelow">
           <LazyLoad>
-            <img src={require('./images/quotation-mark.svg')} alt='Quotation mark' className='quotation-mark' />
+            <img
+              src={require("./images/quotation-mark.svg")}
+              alt="Quotation mark"
+              className="quotation-mark"
+            />
           </LazyLoad>
-          <div className='header-titles'>
+          <div className="header-titles">
             <h1>Hi, I'm Khanh</h1>
             <h2> I'm good at pushing pixels around the screen.</h2>
           </div>
         </div>
-        {
-          window.pageYOffset < this.state.componentHeight &&
-          <button className='arrow-down-button fadeIn' onClick={this.handleArrowDownButtonPress.bind(this)}>
-            <img src={require('./images/arrow-down.svg')} alt='Arrow down' className='fadeIn' />
+        {window.pageYOffset < this.state.componentHeight && (
+          <button
+            className="arrow-down-button fadeIn"
+            onClick={this.handleArrowDownButtonPress.bind(this)}
+          >
+            <img
+              src={require("./images/arrow-down.svg")}
+              alt="Arrow down"
+              className="fadeIn"
+            />
           </button>
-        }
-      </div >
+        )}
+      </div>
     );
   }
 
   handleArrowDownButtonPress() {
     if (window.pageYOffset < this.state.componentHeight)
-      window.scrollTo({ top: this.state.componentHeight, left: 0, behavior: 'smooth' });
+      window.scrollTo({
+        top: this.state.componentHeight,
+        left: 0,
+        behavior: "smooth",
+      });
   }
 }
 

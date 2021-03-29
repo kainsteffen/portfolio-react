@@ -1,36 +1,36 @@
 .fade.enter {
-    opacity: 0;
+  opacity: 0;
 }
 
 .fade.enter.enter-active {
-    opacity: 1;
-    transition: opacity 200ms ease-in;
-    transition-delay: 200ms;
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+  transition-delay: 200ms;
 }
 
 .fade.exit {
-    opacity: 1;
+  opacity: 1;
 }
 
 .fade.exit.exit-active {
-    opacity: 0;
-    transition: opacity 200ms ease-in;
+  opacity: 0;
+  transition: opacity 200ms ease-in;
 }
 
 .transition-group {
-    position: relative;
+  position: relative;
 }
 
 .fade {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .route-section {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }

@@ -1,56 +1,57 @@
 .hamburger-button {
-    position: relative;
-    height: 50px;
-    width: 50px;
-    background-color: #00000000;
-    z-index: 2;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: #00000000;
+  z-index: 2;
 }
 
 .hamburger-button-line {
-    position: absolute;
-    width: 40px;
-    height: 2px;
-    background-color: var(--main-color);
-    transition: .3s ease-in-out;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: var(--main-color);
+  transition: 0.3s ease-in-out;
 }
 
 .hamburger-button.collapsed .hamburger-button-line {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 .hamburger-button div:nth-child(1) {
-    top: 10px;
+  top: 10px;
 }
 
-.hamburger-button div:nth-child(2) {}
+.hamburger-button div:nth-child(2) {
+}
 
 .hamburger-button div:nth-child(3) {
-    bottom: 10px;
+  bottom: 10px;
 }
 
 .hamburger-button.collapsed div:nth-child(1) {
-    top: 24px;
-    transform: rotate(45deg);
+  top: 24px;
+  transform: rotate(45deg);
 }
 
 .hamburger-button.collapsed div:nth-child(2) {
-    width: 0;
-    opacity: 0;
+  width: 0;
+  opacity: 0;
 }
 
 .hamburger-button.collapsed div:nth-child(3) {
-    bottom: 24px;
-    transform: rotate(-45deg);
+  bottom: 24px;
+  transform: rotate(-45deg);
 }
 
 @media only screen and (max-width: 1000px) {
-    .hamburger-button {
-        display: visible;
-    }
+  .hamburger-button {
+    display: visible;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-    .hamburger-button {
-        display: none;
-    }
+  .hamburger-button {
+    display: none;
+  }
 }

@@ -1,49 +1,46 @@
-import React, { Component } from 'react';
-import '../ProjectPage.css';
-import SectionHeader from '../../SectionHeader/SectionHeader.js';
-import Footer from '../../Footer/Footer.js';
-import TagsList from '../../TagsList/TagsList.js';
-import BulletList from '../../BulletList/BulletList.js';
-import CustomButton from '../../CustomButton/CustomButton.js';
+import React, { Component } from "react";
+import "../ProjectPage.css";
+import SectionHeader from "../../SectionHeader/SectionHeader.js";
+import Footer from "../../Footer/Footer.js";
+import TagsList from "../../TagsList/TagsList.js";
+import BulletList from "../../BulletList/BulletList.js";
+import CustomButton from "../../CustomButton/CustomButton.js";
 
 class PolywarPage extends Component {
-    render() {
-        return (
-            <React.Fragment>
-                <main>
-                    <SectionHeader text={'Polywar'} />
-                    <article className='project-page'>
-                        <img src={require('./images/polywar-thumbnail.jpg')} className='project-page-header-image' alt='Purchase Tracker thumbnail' />
-                        <div>
-                            <h4 className='project-page-subtitle'>
-                                2019 - Personal Project
-                                    </h4>
-                            <TagsList
-                                title='Technologies:'
-                                skills=
-                                {[
-                                    'Unity 3D',
-                                    'C#',
-                                ]}
-                            />
-                            <p>
-                                Polywar is an arcade, isometric shooter game for iOS and Android.
-                                <br /><br />
-                                It is currently still under development.
-                            </p>
-                            <BulletList
-                                title='Features:'
-                                items={[
-                                    'Google Admob and Play Games integration',
-                                    'randomly generated levels',
-                                    'customizable player characters and loadouts',
-                                    'original game soundtrack',
-                                    'linear progression system',
-                                    'varied, challenging enemy AIs',
-                                    'custom UI system'
-                                ]}
-                            />
-                            {/*
+  render() {
+    return (
+      <React.Fragment>
+        <main>
+          <SectionHeader text={"Polywar"} />
+          <article className="project-page">
+            <img
+              src={require("./images/polywar-thumbnail.jpg")}
+              className="project-page-header-image"
+              alt="Purchase Tracker thumbnail"
+            />
+            <div>
+              <h4 className="project-page-subtitle">2019 - Personal Project</h4>
+              <TagsList title="Technologies:" skills={["Unity 3D", "C#"]} />
+              <p>
+                Polywar is an arcade, isometric shooter game for iOS and
+                Android.
+                <br />
+                <br />
+                It is currently still under development.
+              </p>
+              <BulletList
+                title="Features:"
+                items={[
+                  "Google Admob and Play Games integration",
+                  "randomly generated levels",
+                  "customizable player characters and loadouts",
+                  "original game soundtrack",
+                  "linear progression system",
+                  "varied, challenging enemy AIs",
+                  "custom UI system",
+                ]}
+              />
+              {/*
                             <div className='project-page-links'>
                                 <CustomButton
                                     label='App Store'
@@ -58,21 +55,25 @@ class PolywarPage extends Component {
                                 />
                             </div>
                             */}
-                        </div>
-                    </article>
-                </main>
-                <Footer />
-            </React.Fragment>
-        );
-    }
+            </div>
+          </article>
+        </main>
+        <Footer />
+      </React.Fragment>
+    );
+  }
 
-    handleAppStoreButtonPress() {
-        window.open('https://itunes.apple.com/de/app/purchase-tracker/id1457110640?l=en&mt=8')
-    }
+  handleAppStoreButtonPress() {
+    window.open(
+      "https://itunes.apple.com/de/app/purchase-tracker/id1457110640?l=en&mt=8"
+    );
+  }
 
-    handlePlayStoreButtonPress() {
-        window.open('https://play.google.com/store/apps/details?id=com.KAIN.purchasetracker')
-    }
+  handlePlayStoreButtonPress() {
+    window.open(
+      "https://play.google.com/store/apps/details?id=com.KAIN.purchasetracker"
+    );
+  }
 }
 
 export default PolywarPage;
