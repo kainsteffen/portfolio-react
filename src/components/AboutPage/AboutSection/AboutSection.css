@@ -1,15 +1,19 @@
 .about-section {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .about-section-container {
   display: flex;
+  padding: 40px;
+  border-radius: 15px;
+
+  /* box-shadow: var(--box-shadow); */
 }
 
 .about-section-container img {
   display: block;
   align-self: flex-start;
-  border-radius: 100%;
+  border-radius: 15px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -65,12 +69,15 @@
 /* Desktop Styles */
 
 @media only screen and (min-width: 1000px) {
+  .about-section-content {
+    padding: 0 80px;
+  }
+
   .about-section-container {
-    max-width: 675px;
-    margin: 0 auto;
+    /* max-width: 675px;
+    margin: 0 auto; */
   }
   .about-section-container img {
-    margin-right: 25px;
     width: 30%;
   }
   .about-section-container .download-button-container {

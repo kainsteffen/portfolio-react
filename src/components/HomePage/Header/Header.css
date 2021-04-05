@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 85vh;
+  height: 87vh;
 }
 
 .header-animation-container {
@@ -16,12 +16,6 @@
 .header-quote {
   display: flex;
   justify-content: center;
-}
-
-.header-quote .quotation-mark {
-  width: 35px;
-  height: 35px;
-  margin: 7px 20px 0 0;
 }
 
 .header-quote h1 {
@@ -38,17 +32,25 @@
 }
 
 #header-container .arrow-down-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 15px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 80px;
-  height: 80px;
+  padding: 10px;
   transform: translatey(0px);
   animation: float 4s ease-in-out infinite;
   cursor: pointer;
+}
+
+.arrow-down-button:hover {
+  border-radius: 100%;
+  box-shadow: var(--box-shadow);
+  transition: 0.3s ease-in-out;
 }
 
 #header-container .arrow-down-button img {

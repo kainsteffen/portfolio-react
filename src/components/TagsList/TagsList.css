@@ -1,9 +1,16 @@
+.tags-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .tags-list h4 {
   margin-bottom: 10px;
 }
 
 .tags-list ul {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }

@@ -4,7 +4,7 @@
 
 .motto-section-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin: 50px 0;
 }
@@ -19,18 +19,43 @@
 }
 
 .motto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  min-height: 250px;
 }
 
 .motto-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.motto-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 100%;
+}
+
+.motto-img img {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
 }
 
 .motto-header h4 {
   text-align: start;
-  padding-left: 10px;
-  border-left: 2px solid var(--main-color);
+  /* border-left: 2px solid var(--main-color); */
 }
 
 .motto-header img {
@@ -38,7 +63,12 @@
 }
 
 .motto-description {
-  margin-top: 25px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.divider {
+  flex: 0.4;
 }
 
 /* Mobile Styles */
@@ -49,7 +79,7 @@
   }
   .motto {
     margin: 20px 0;
-    padding: 0 10%;
+    padding: 0% 10%;
   }
   .motto-connector {
     display: none;
@@ -64,7 +94,7 @@
   }
   .motto {
     margin: 25px 0;
-    padding: 0 15%;
+    padding: 10% 15%;
   }
   .motto-connector {
     display: none;
@@ -75,6 +105,6 @@
 
 @media only screen and (min-width: 1000px) {
   .motto-section-content {
-    padding: 0 5%;
+    padding: 0 40px;
   }
 }

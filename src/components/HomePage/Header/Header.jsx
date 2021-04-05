@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import LazyLoad from "react-lazy-load";
 import "./Header.css";
 import BallGridAnimation from "../../BallGridAnimation/BallGridAnimation";
-import quotationMarkIcon from "./images/quotation-mark.svg";
 import arrowDownIcon from "./images/arrow-down.svg";
 
 class Header extends Component {
@@ -40,15 +38,8 @@ class Header extends Component {
           />
         </div>
         <div className="header-quote fadeIn-slideInFromBelow">
-          <LazyLoad>
-            <img
-              src={quotationMarkIcon}
-              alt="Quotation mark"
-              className="quotation-mark"
-            />
-          </LazyLoad>
           <div className="header-titles">
-            <h1>Hi, I&apos;m Khanh</h1>
+            <h1>Hi, I&apos;m Khanh 👋</h1>
             <h2> I&apos;m good at pushing pixels around the screen.</h2>
           </div>
         </div>

@@ -1,17 +1,8 @@
 .section-header {
+  text-align: center;
   position: relative;
   padding-bottom: 20px;
   font-size: 30px;
-}
-
-.section-header:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 75px;
-  height: 2px;
-  background-color: var(--main-color);
 }
 
 /* Mobile Styles */
