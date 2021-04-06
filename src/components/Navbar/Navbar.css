@@ -28,38 +28,17 @@
   text-align: center;
   margin: 15px 0 15px 30px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
 }
 
-.navbar-right a:visited {
+.navbar-right #active {
   color: var(--main-color);
 }
 
-.navbar-right #active:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -5px;
-  width: 50%;
-  height: 1px;
-  background-color: var(--main-color);
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
-}
-
-.navbar-right a:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -5px;
-  background-color: var(--main-color);
-  width: 0;
-  height: 1px;
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
-}
-
-.navbar-right a:hover:after {
-  width: 50%;
-  height: 1px;
+.navbar-right a:hover {
 }
 
 .navbar-right {

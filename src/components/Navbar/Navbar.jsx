@@ -52,7 +52,7 @@ class Navbar extends Component {
               to="/"
               id={this.props.location.pathname === "/" ? "active" : undefined}
             >
-              WORK
+              work
             </Link>
             <Link
               to="/about"
@@ -60,7 +60,7 @@ class Navbar extends Component {
                 this.props.location.pathname === "/about" ? "active" : undefined
               }
             >
-              ABOUT
+              about
             </Link>
           </ul>
           <HamburgerButton

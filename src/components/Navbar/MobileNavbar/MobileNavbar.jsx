@@ -17,7 +17,7 @@ function MobileNavbar(props) {
             className={props.isToggled ? "visible" : "hidden"}
             onClick={props.onClick}
           >
-            Work
+            work
           </Link>
         </li>
         <div className="link-hider" />
@@ -28,7 +28,7 @@ function MobileNavbar(props) {
             className={props.isToggled ? "visible" : "hidden"}
             onClick={props.onClick}
           >
-            About
+            about
           </Link>
         </li>
         <div className="link-hider" />
