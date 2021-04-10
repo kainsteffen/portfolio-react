@@ -7,7 +7,7 @@ class SkillsSection extends Component {
   render() {
     return (
       <section className="skills-section">
-        <SectionHeader text="Things I'm good at" />
+        <SectionHeader text="Things I work with" />
         <div className="skills-section-content">
           <TagsList
             title="Technologies"
