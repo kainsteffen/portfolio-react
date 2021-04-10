@@ -1,0 +1,49 @@
+// Small smartphones
+$screen-xs: 0px;
+
+// Large smartphones
+$screen-sm: 600px;
+
+// Small tablets
+$screen-md: 960px;
+
+// Tablets and Laptops
+$screen-lg: 1280px;
+
+// Desktops
+$screen-xl: 1920px;
+
+// Extra small
+@mixin xs {
+  @media (min-width: #{$screen-xs}) {
+    @content;
+  }
+}
+
+// Small
+@mixin sm {
+  @media (min-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+// Medium
+@mixin md {
+  @media (min-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+// Large
+@mixin lg {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+// Extra large
+@mixin xl {
+  @media (min-width: #{$screen-xl}) {
+    @content;
+  }
+}
