@@ -25,6 +25,7 @@
 
 .header-quote h2 {
   font-size: 20px;
+  color: var(--secondary-color);
 }
 
 .header-quote h1 {
