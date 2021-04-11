@@ -1,0 +1,2 @@
+(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[5],{75:function(o,t,s){"use strict";s.r(t),t.default=s.p+"static/media/stockify-logo.1d517287.svg"}}]);
+//# sourceMappingURL=5.c00f3e89.chunk.js.map
