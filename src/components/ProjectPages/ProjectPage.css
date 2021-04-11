@@ -2,6 +2,14 @@
   display: flex;
 }
 
+.project-page-header-image {
+  border-radius: 15px;
+}
+
+.project-page-skeleton {
+  background-color: var(--secondary-color);
+}
+
 .project-page p {
   text-align: start;
   margin-bottom: 30px;

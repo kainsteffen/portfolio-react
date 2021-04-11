@@ -5,14 +5,8 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Navbar from "./components/Navbar/Navbar";
 import HomePage from "./components/HomePage/HomePage";
 import AboutPage from "./components/AboutPage/AboutPage";
-import {
-  PurchaseTrackerPage,
-  UpwardsPage,
-  OverlaysPage,
-  AstendoEventPage,
-  PolywarPage,
-} from "./components/ProjectPages";
 import "./App.css";
+import ProjectPage from "./components/ProjectPages/ProjectPage";
 
 class App extends Component {
   render() {
@@ -30,14 +24,9 @@ class App extends Component {
                 <Switch location={this.props.location}>
                   <Route exact path="/" component={HomePage} />
                   <Route path="/about" component={AboutPage} />
-                  <Route
-                    path="/purchase-tracker"
-                    component={PurchaseTrackerPage}
-                  />
-                  <Route path="/upwards" component={UpwardsPage} />
-                  <Route path="/overlays" component={OverlaysPage} />
-                  <Route path="/astendo-event" component={AstendoEventPage} />
-                  <Route path="/polywar" component={PolywarPage} />
+                  <Route path="/projects/:id">
+                    <ProjectPage />
+                  </Route>
                 </Switch>
               </section>
             </CSSTransition>

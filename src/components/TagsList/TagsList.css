@@ -1,7 +1,7 @@
 .tags-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .tags-list h4 {
@@ -10,7 +10,7 @@
 
 .tags-list ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
@@ -22,6 +22,7 @@
   white-space: nowrap;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 0 2px rgba(0, 0, 0, 0.08);
+  font-weight: 500;
   /*
         smooth box shadow
         0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
