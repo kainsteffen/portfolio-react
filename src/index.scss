@@ -26,19 +26,19 @@
   --page-margin-mobile: 10%;
 }
 
-@include xs {
+@include xs-max {
   main {
     margin: 0 var(--page-margin-mobile) 100px var(--page-margin-mobile);
   }
 }
 
-@include sm {
+@include sm-max {
   main {
     margin: 0 var(--page-margin-tablet) 100px var(--page-margin-tablet);
   }
 }
 
-@include lg {
+@include lg-max {
   main {
     margin: 0 var(--page-margin-desktop) 100px var(--page-margin-desktop);
   }
