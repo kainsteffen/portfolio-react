@@ -46,7 +46,7 @@ function MottoCard(props) {
         </div>
         <h2>{props.title}</h2>
       </div>
-      <div className="motto-description">{props.description}</div>
+      <p className="motto-description">{props.description}</p>
     </div>
   );
 }

@@ -6,7 +6,6 @@
   --secondary-color: #888888;
   --background-color: #fff;
   --accent-color: #101010;
-
   --disabled-color: #b7b7b7;
 
   // Box shadows
@@ -69,6 +68,10 @@ h6,
 p {
   margin: 0;
   padding: 0;
+}
+
+p {
+  line-height: 25px;
 }
 
 ul {
