@@ -1,5 +1,5 @@
 import React from "react";
-import "./HamburgerButton.css";
+import "./HamburgerButton.scss";
 
 function HamburgerButton(props) {
   return (

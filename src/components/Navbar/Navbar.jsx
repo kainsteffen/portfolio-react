@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
-import "./Navbar.css";
+import "./Navbar.scss";
 import HamburgerButton from "./HamburgerButton/HamburgerButton";
 import MobileNavbar from "./MobileNavbar/MobileNavbar";
 import logo from "./images/logo.svg";

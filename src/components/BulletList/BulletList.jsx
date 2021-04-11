@@ -1,5 +1,5 @@
 import React from "react";
-import "./BulletList.css";
+import "./BulletList.scss";
 
 function BulletList(props) {
   return (

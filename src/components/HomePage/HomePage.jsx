@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./HomePage.css";
+import "./HomePage.scss";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import Header from "./Header/Header";

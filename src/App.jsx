@@ -5,7 +5,7 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Navbar from "./components/Navbar/Navbar";
 import HomePage from "./components/HomePage/HomePage";
 import AboutPage from "./components/AboutPage/AboutPage";
-import "./App.css";
+import "./App.scss";
 import ProjectPage from "./components/ProjectPages/ProjectPage";
 
 class App extends Component {

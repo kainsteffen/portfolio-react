@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Footer.css";
+import "./Footer.scss";
 import arrowUpIcon from "./images/arrow_up.svg";
 import xingLogo from "./images/xing-logo.svg";
 import linkedinLogo from "./images/linkedin-logo.svg";

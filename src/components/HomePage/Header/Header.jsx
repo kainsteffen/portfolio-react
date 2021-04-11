@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Header.css";
+import "./Header.scss";
 import BallGridAnimation from "../../BallGridAnimation/BallGridAnimation";
 import arrowDownIcon from "./images/arrow-down.svg";
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./SkillsSection.css";
+import "./SkillsSection.scss";
 import SectionHeader from "../../SectionHeader/SectionHeader";
 import TagsList from "../../TagsList/TagsList";
 

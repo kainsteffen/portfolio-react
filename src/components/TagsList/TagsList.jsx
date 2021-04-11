@@ -1,5 +1,5 @@
 import React from "react";
-import "./TagsList.css";
+import "./TagsList.scss";
 
 function TagsList(props) {
   return (

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./AboutSection.css";
+import "./AboutSection.scss";
 import CustomButton from "../../CustomButton/CustomButton";
 import profilePicture from "./images/profile-picture.jpg";
 

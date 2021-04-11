@@ -1,5 +1,5 @@
 import React from "react";
-import "./CustomButton.css";
+import "./CustomButton.scss";
 
 function CustomButton(props) {
   return (

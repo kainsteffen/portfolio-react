@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./AboutPage.css";
+import "./AboutPage.scss";
 import AboutSection from "./AboutSection/AboutSection";
 import MottoSection from "./MottoSection/MottoSection";
 import SkillsSection from "./SkillsSection/SkillsSection";

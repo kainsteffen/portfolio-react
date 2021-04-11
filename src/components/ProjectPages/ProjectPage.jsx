@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import TagsList from "../TagsList/TagsList";
 import CustomButton from "../CustomButton/CustomButton";
-import "./ProjectPage.css";
+import "./ProjectPage.scss";
 import projects from "./content";
 import appleLogo from "./images/apple-logo.svg";
 import androidLogo from "./images/android-logo.svg";

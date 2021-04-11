@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./MottoSection.css";
+import "./MottoSection.scss";
 import SectionHeader from "../../SectionHeader/SectionHeader";
 import brushIcon from "./images/brush.svg";
 import wrenchIcon from "./images/wrench.svg";
