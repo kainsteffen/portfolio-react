@@ -39,7 +39,7 @@ class Header extends Component {
         </div>
         <div className="header-quote fadeIn-slideInFromBelow">
           <div className="header-titles">
-            <h1>Hi, I&apos;m Khanh</h1>
+            <h1>Hello, I&apos;m Khanh</h1>
             <h1 className="wave">👋</h1>
             <h2> I&apos;m good at pushing pixels around the screen.</h2>
           </div>
