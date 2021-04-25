@@ -1,2 +1,0 @@
-(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[8],{76:function(t,i,o){"use strict";o.r(i),i.default=o.p+"static/media/stockify-thumbnail.6d7bc510.png"}}]);
-//# sourceMappingURL=8.d1d92b5f.chunk.js.map

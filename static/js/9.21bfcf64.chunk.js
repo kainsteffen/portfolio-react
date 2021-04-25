@@ -1,2 +1,0 @@
-(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[9],{77:function(o,p,t){"use strict";t.r(p),p.default=t.p+"static/media/upwards-logo.5c521801.png"}}]);
-//# sourceMappingURL=9.21bfcf64.chunk.js.map

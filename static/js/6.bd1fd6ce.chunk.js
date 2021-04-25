@@ -1,2 +1,0 @@
-(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[6],{72:function(t,o,i){"use strict";i.r(o),o.default=i.p+"static/media/dots-clock-thumbnail.236cea2a.png"}}]);
-//# sourceMappingURL=6.bd1fd6ce.chunk.js.map
