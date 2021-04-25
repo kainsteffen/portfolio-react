@@ -1,0 +1,17 @@
+/* Mobile Styles */
+
+@media only screen and (max-width: 500px) {
+}
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+}
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 1000px) {
+  .skills-section-content {
+    padding: 0 5%;
+  }
+}

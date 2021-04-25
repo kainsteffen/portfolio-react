@@ -1,0 +1,108 @@
+#header-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 87vh;
+}
+
+.header-animation-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  /* transform: rotate(45deg); */
+}
+
+.header-quote {
+  display: flex;
+  justify-content: center;
+}
+
+.header-quote h1 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.header-quote h2 {
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
+.header-quote h1 {
+  display: inline-block;
+}
+
+#header-container .arrow-down-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  transform: translatey(0px);
+  animation: float 4s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.arrow-down-button:hover {
+  border-radius: 100%;
+  box-shadow: var(--box-shadow);
+  transition: 0.3s ease-in-out;
+}
+
+#header-container .arrow-down-button img {
+  width: 50px;
+  height: 50px;
+}
+
+.wave {
+  margin-left: 1rem;
+  animation-name: wave-animation;
+  animation-duration: 6s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  10% {
+    transform: rotate(-8deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-4deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  50% {
+    transform: rotate(0deg);
+  }
+}

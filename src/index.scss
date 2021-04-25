@@ -1,0 +1,95 @@
+@import "media-queries";
+
+:root {
+  // Colors
+  --main-color: #000;
+  --secondary-color: #888888;
+  --background-color: #fff;
+  --accent-color: #101010;
+  --disabled-color: #b7b7b7;
+
+  // Box shadows
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 0 2px rgba(0, 0, 0, 0.08);
+
+  // Spacings
+  --space-unit: 1rem;
+  --space-xxs: calc(0.25 * var(--space-unit));
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1.25 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
+  --space-xl: calc(3.25 * var(--space-unit));
+  --space-xxl: calc(5.25 * var(--space-unit));
+
+  --page-margin-desktop: 20%;
+  --page-margin-tablet: 15%;
+  --page-margin-mobile: 10%;
+}
+
+@include xs-min {
+  main {
+    margin: 0 var(--page-margin-mobile) 100px var(--page-margin-mobile);
+  }
+}
+
+@include sm-min {
+  main {
+    margin: 0 var(--page-margin-tablet) 100px var(--page-margin-tablet);
+  }
+}
+
+@include lg-min {
+  main {
+    margin: 0 var(--page-margin-desktop) 100px var(--page-margin-desktop);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 25px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  background: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus {
+  outline: 0;
+}

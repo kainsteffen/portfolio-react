@@ -1,0 +1,68 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.navbar h1 {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.navbar h1 a {
+  text-decoration: none;
+}
+
+.navbar .logo {
+  height: 50px;
+}
+
+.navbar-right a {
+  position: relative;
+  float: left;
+  text-align: center;
+  margin: 15px 0 15px 30px;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--disabled-color);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+
+.navbar-right #active {
+  color: var(--main-color);
+}
+
+.navbar-right a:hover {
+}
+
+.navbar-right {
+  float: right;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    margin: 0 15px;
+  }
+  .navbar-right {
+    display: none;
+  }
+}
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 1000px) {
+  .navbar {
+    margin: 0 var(--page-margin-desktop);
+  }
+  .navbar-right {
+    display: visible;
+  }
+}
