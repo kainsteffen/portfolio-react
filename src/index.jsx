@@ -1,13 +1,23 @@
+import { createBrowserHistory } from "history";
 import React from "react";
 import ReactDOM from "react-dom";
+import ReactGA from "react-ga";
 import { HashRouter as Router } from "react-router-dom";
-import * as serviceWorker from "./serviceWorker";
-import "./index.scss";
 import "./animations.scss";
 import App from "./App";
+import "./index.scss";
+import * as serviceWorker from "./serviceWorker";
+
+ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
+
+const history = createBrowserHistory();
+history.listen((location) => {
+  window.ga("set", "page", location.location.hash);
+  window.ga("send", "pageview");
+});
 
 const app = (
-  <Router basename="/">
+  <Router basename="/" history={history}>
     <App />
   </Router>
 );
