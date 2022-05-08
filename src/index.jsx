@@ -1,14 +1,14 @@
 import { createBrowserHistory } from "history";
 import React from "react";
 import ReactDOM from "react-dom";
-import ReactGA from "react-ga";
+import { initialize } from "react-ga";
 import { HashRouter as Router } from "react-router-dom";
 import "./animations.scss";
 import App from "./App";
 import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
 
-ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
+initialize(process.env.REACT_APP_TRACKING_ID);
 
 const history = createBrowserHistory();
 history.listen((location) => {

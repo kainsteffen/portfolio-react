@@ -71,7 +71,7 @@ export default function ProjectCard(props) {
             </div>
           </div>
           <div className="project-card__tags">
-            <TagsList skills={props.project.tags} />
+            <TagsList skills={props.project.tags} flat />
           </div>
           <p className="project-card__description">
             {props.project.shortDescription}

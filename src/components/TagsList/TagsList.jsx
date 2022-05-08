@@ -3,7 +3,7 @@ import "./TagsList.scss";
 
 function TagsList(props) {
   return (
-    <div className="tags-list">
+    <div className={props.flat ? "tags-list-flat" : "tags-list"}>
       <h4>{props.title}</h4>
       <ul>
         {props.skills.map((skill) => (

@@ -56,7 +56,7 @@ export default function ProjectPage() {
             <h4 className="project-page-subtitle">
               {`${project.date} - ${project.type}`}
             </h4>
-            <TagsList skills={project.tags} />
+            <TagsList skills={project.tags} flat />
             <p>
               {project.shortDescription}
               <br />

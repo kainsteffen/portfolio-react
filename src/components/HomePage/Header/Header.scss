@@ -42,7 +42,10 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  border-radius: 100%;
+  box-shadow: var(--box-shadow);
+  width: 60px;
+  height: 60px;
   transform: translatey(0px);
   animation: float 4s ease-in-out infinite;
   cursor: pointer;

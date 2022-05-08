@@ -39,9 +39,9 @@ class Header extends Component {
         </div>
         <div className="header-quote fadeIn-slideInFromBelow">
           <div className="header-titles">
-            <h1>Hello, I&apos;m Khanh</h1>
+            <h1>Hey, I&apos;m Khanh</h1>
             <h1 className="wave">👋</h1>
-            <h2> I&apos;m good at pushing pixels around the screen.</h2>
+            <h2> I&apos;m a Software Engineer and good at pushing pixels.</h2>
           </div>
         </div>
         {window.pageYOffset < this.state.componentHeight && (

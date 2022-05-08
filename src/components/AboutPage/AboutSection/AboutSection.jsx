@@ -18,13 +18,14 @@ class AboutSection extends Component {
           <div className="about-section-content">
             <h4>Hi there, I&apos;m Khanh Steffen!</h4>
             <p>
-              I&apos;m a software developer who is passionate about mobile, game
+              I&apos;m a software engineer who is passionate about mobile, game
               and web application development based in Berlin, Germany. I am
-              currently pursuing my Bachelor&apos;s Degree in International
-              Media Computer Science at the Hochschule für Technik und
-              Wirtschaft. A relentless work attitude striving for quality
-              products that people enjoy and a critical attention to detail are
-              what define me.
+              currently working on various FinTech products at Klarna.
+            </p>
+            <p>
+              A relentless work attitude striving for quality products that
+              people enjoy and a critical attention to detail are what define
+              me.
             </p>
             <div className="download-button-container">
               <CustomButton
