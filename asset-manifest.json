@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b98ba92b.chunk.css",
-    "main.js": "/static/js/main.95f1078e.chunk.js",
-    "main.js.map": "/static/js/main.95f1078e.chunk.js.map",
+    "main.js": "/static/js/main.8ad1762c.chunk.js",
+    "main.js.map": "/static/js/main.8ad1762c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.028387fe.js",
     "runtime-main.js.map": "/static/js/runtime-main.028387fe.js.map",
     "static/js/2.63520d86.chunk.js": "/static/js/2.63520d86.chunk.js",
@@ -37,7 +37,7 @@
     "static/media/github-logo.c556d83c.svg": "/static/media/github-logo.c556d83c.svg",
     "static/media/github-logo.svg": "/static/media/github-logo.d1bb13ce.svg",
     "static/media/linkedin-logo.62aebdaf.svg": "/static/media/linkedin-logo.62aebdaf.svg",
-    "static/media/logo.31603583.svg": "/static/media/logo.31603583.svg",
+    "static/media/logo.d120da00.svg": "/static/media/logo.d120da00.svg",
     "static/media/profile-picture.99062399.jpg": "/static/media/profile-picture.99062399.jpg",
     "static/media/purchase-tracker-logo.svg": "/static/media/purchase-tracker-logo.530e0810.svg",
     "static/media/purchase-tracker-thumbnail.png": "/static/media/purchase-tracker-thumbnail.5541298f.png",
@@ -53,6 +53,6 @@
     "static/js/runtime-main.028387fe.js",
     "static/js/2.63520d86.chunk.js",
     "static/css/main.b98ba92b.chunk.css",
-    "static/js/main.95f1078e.chunk.js"
+    "static/js/main.8ad1762c.chunk.js"
   ]
 }
