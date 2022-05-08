@@ -1,0 +1,2 @@
+(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[7],{77:function(t,p,i){"use strict";i.r(p),p.default=i.p+"static/media/purchase-tracker-thumbnail.5541298f.png"}}]);
+//# sourceMappingURL=7.479016a1.chunk.js.map
