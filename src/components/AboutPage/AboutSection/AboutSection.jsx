@@ -16,7 +16,7 @@ class AboutSection extends Component {
         <div className="about-section-container">
           <img src={profilePicture} alt="Profile" />
           <div className="about-section-content">
-            <h4>Hi there, I&apos;m Khanh Steffen!</h4>
+            <h4>Khanh Steffen</h4>
             <p>
               I&apos;m a software engineer who is passionate about mobile, game
               and web application development based in Berlin, Germany. I am
