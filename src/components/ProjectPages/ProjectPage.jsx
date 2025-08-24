@@ -1,3 +1,4 @@
+import ReactMarkdown from 'react-markdown';
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BulletList from "../BulletList/BulletList";
@@ -104,6 +105,12 @@ export default function ProjectPage() {
             </div>
           </div>
         </article>
+        {project.privacyPolicy && (
+          <div className="project-page-privacy-policy">
+            <SectionHeader text="Privacy Policy" />
+            <ReactMarkdown>{project.privacyPolicy}</ReactMarkdown>
+          </div>
+        )}
       </main>
       <Footer />
     </>

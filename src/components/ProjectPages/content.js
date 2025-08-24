@@ -25,6 +25,53 @@ export default {
       "data backup and restore",
       "dark and light app themes",
     ],
+    privacyPolicy: `Privacy Policy for Purchase Tracker
+
+Last updated: August 24, 2025
+
+This Privacy Policy describes how Purchase Tracker ("we," "us," or "our") handles your information when you use our mobile application (the "Service").
+
+1. Information We Collect
+
+Purchase Tracker is a personal finance application that is designed to work completely offline. All data you enter into the app is stored locally on your device and is not transmitted to any external servers.
+
+The information we collect and store on your device includes:
+
+*   **Purchase Data:** This includes the description, price, date, and category of your purchases.
+*   **Budget Data:** This includes your monthly budget amount.
+*   **User Preferences:** This includes your selected currency and theme (light or dark mode).
+
+2. How We Use Your Information
+
+We use the information we collect solely to provide and improve the Service. This includes:
+
+*   Allowing you to track your purchases and manage your personal finances.
+*   Providing you with insights into your spending habits.
+*   Personalizing your experience by remembering your preferences.
+*   Allowing you to import and export your data for backup or sharing purposes.
+
+3. Data Sharing and Disclosure
+
+We do not share your personal information with any third parties. Your data is stored only on your device.
+
+You have the option to share your data by using the export feature, which creates a local backup file. You are responsible for the security of this file and any data you choose to share with others.
+
+4. Data Security
+
+The security of your data is important to us. All your data is stored locally on your device, and its security is dependent on the security of your device itself. We do not have access to your data.
+
+5. Changes to This Privacy Policy
+
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+
+You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+
+6. Contact Us
+
+If you have any questions about this Privacy Policy, you can contact us:
+
+*   By email: khanhsteffen@gmail.com
+`,
     tags: ["Flutter", "Dart"],
   },
   upwards: {
