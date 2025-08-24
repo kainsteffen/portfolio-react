@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[530],{530:(o,e,s)=>{o.exports=s.p+"static/media/stockify-logo.b761751509ea75b67aae.svg"}}]);

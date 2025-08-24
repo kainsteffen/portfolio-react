@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[252],{252:(o,p,s)=>{o.exports=s.p+"static/media/upwards-logo.5c521801060cfc777556.png"}}]);

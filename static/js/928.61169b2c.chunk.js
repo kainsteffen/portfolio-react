@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[928],{928:(e,o,s)=>{e.exports=s.p+"static/media/purchase-tracker-logo.530e0810ca5b754e4343.svg"}}]);

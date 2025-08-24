@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[442],{442:(e,o,p)=>{e.exports=p.p+"static/media/apple-logo.e79ae9897ddd6b4ee607.svg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[281],{281:(o,e,s)=>{o.exports=s.p+"static/media/dots-clock-logo.de0c17fd2d0844e18b61.svg"}}]);

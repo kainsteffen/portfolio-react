@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[545],{545:(o,e,s)=>{o.exports=s.p+"static/media/android-logo.8ba7f8e8b95e1485967a.svg"}}]);
